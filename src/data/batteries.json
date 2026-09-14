@@ -1,0 +1,17 @@
+{
+  "generated": "2026-09-14",
+  "note": "Typical values cross-verified across manufacturer datasheets. Figures are ranges, not a substitute for a specific battery's datasheet. CCA basis matters: JIS (-15C) reads higher than EN/SAE (-18C).",
+  "batteries": [
+    { "group": "H4", "alias": "L1", "standard": "EN/DIN", "voltage": 12, "capacity_ah": 55, "cca": 550, "cca_basis": "EN -18C", "technology": "Flooded/AGM/EFB" },
+    { "group": "H5", "alias": "L2", "standard": "EN/DIN", "voltage": 12, "capacity_ah": 60, "cca": 600, "cca_basis": "EN -18C", "technology": "Flooded/AGM/EFB" },
+    { "group": "H6", "alias": "L3", "standard": "EN/DIN", "voltage": 12, "capacity_ah": 70, "cca": 660, "cca_basis": "EN -18C", "technology": "Flooded/AGM/EFB" },
+    { "group": "H7", "alias": "L4", "standard": "EN/DIN", "voltage": 12, "capacity_ah": 80, "cca": 760, "cca_basis": "EN -18C", "technology": "AGM/EFB" },
+    { "group": "H8", "alias": "L5", "standard": "EN/DIN", "voltage": 12, "capacity_ah": 92, "cca": 880, "cca_basis": "EN -18C", "technology": "AGM/EFB" },
+    { "group": "H9", "alias": "L6", "standard": "EN/DIN", "voltage": 12, "capacity_ah": 105, "cca": 950, "cca_basis": "EN -18C", "technology": "AGM/EFB" },
+    { "group": "55D23", "alias": "D23", "standard": "JIS", "voltage": 12, "capacity_ah": 60, "cca": 540, "cca_basis": "JIS -15C", "technology": "Flooded MF" },
+    { "group": "N150", "alias": "145G51", "standard": "JIS", "voltage": 12, "capacity_ah": 135, "cca": 900, "cca_basis": "JIS -15C", "technology": "Heavy-duty flooded" },
+    { "group": "N200", "alias": "190H52", "standard": "JIS", "voltage": 12, "capacity_ah": 200, "cca": 1100, "cca_basis": "JIS -15C", "technology": "Heavy-duty flooded" },
+    { "group": "31", "alias": "Group 31", "standard": "BCI/SAE", "voltage": 12, "capacity_ah": 100, "cca": 900, "cca_basis": "SAE -18C", "technology": "Flooded/AGM" },
+    { "group": "8D", "alias": "Group 8D", "standard": "BCI/SAE", "voltage": 12, "capacity_ah": 200, "cca": 1400, "cca_basis": "SAE -18C", "technology": "Heavy-duty flooded" }
+  ]
+}
