@@ -1,0 +1,56 @@
+---
+const SITE = 'https://data.worldbatteryhub.com';
+const standards = [
+  { std: 'JIS D5301', region: 'Japan / Asia', temp: '−15°C', cutoff: 'reference', effect: 'Higher (warmer test)' },
+  { std: 'SAE J537', region: 'North America', temp: '−18°C (0°F)', cutoff: '30 s, ≥7.2V', effect: 'baseline' },
+  { std: 'EN 50342', region: 'Europe', temp: '−18°C', cutoff: '10 s to 7.5V', effect: 'differs (higher cut-off)' },
+  { std: 'DIN 43539', region: 'Germany / Europe', temp: '−18°C', cutoff: '30 s to 9.0V', effect: 'lower (stricter cut-off)' },
+  { std: 'CA / MCA', region: 'marine / general', temp: '0°C (32°F)', cutoff: '30 s, ≥7.2V', effect: 'higher than CCA' },
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cold Cranking Amps (CCA) — Reference | World Battery Hub</title>
+    <meta name="description" content="CCA standards at a glance — JIS, SAE, EN, DIN and CA/MCA test temperatures and cut-off voltages, and the CCA-vs-Ah relationship." />
+    <link rel="canonical" href={`${SITE}/cca/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cold Cranking Amps (CCA) — Reference</h1>
+      <p>Companion data to the <a href="https://worldbatteryhub.com/lead-acid/cca/what-is-cca/">main-site article</a>. CCA is a cold-start power rating measured under a specific standard; a value without its standard is not comparable.</p>
+
+      <h2>Standards at a glance</h2>
+      <table>
+        <thead>
+          <tr><th>Standard</th><th>Region</th><th>Temperature</th><th>Cut-off / method</th><th>Effect on number</th></tr>
+        </thead>
+        <tbody>
+          {standards.map((s) => (
+            <tr><td><strong>{s.std}</strong></td><td>{s.region}</td><td>{s.temp}</td><td>{s.cutoff}</td><td>{s.effect}</td></tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>Key relationships</h2>
+      <ul>
+        <li><strong>CCA vs Ah</strong> — CCA is instantaneous cranking power (short, high-current burst); Ah is total stored energy (long, low-current discharge). Independent dimensions — no fixed multiplier.</li>
+        <li><strong>CCA vs CA/MCA/HCA</strong> — the same test at warmer temperatures (CA/MCA at 0°C, HCA at 27°C), so each prints a higher number for the same battery.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://worldbatteryhub.com">World Battery Hub</a> · <a href="/">Data index</a>.</p>
+    </div>
+  </body>
+</html>
