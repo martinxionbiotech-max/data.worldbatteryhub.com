@@ -1,0 +1,111 @@
+---
+import batteries from '../../data/batteries.json';
+
+export function getStaticPaths() {
+  return batteries.batteries.map((b) => ({
+    params: { group: b.id },
+    props: { battery: b },
+  }));
+}
+
+const { battery } = Astro.props;
+const SITE = 'https://data.worldbatteryhub.com';
+const url = `${SITE}/battery-groups/${battery.id}/`;
+
+const definedTermJsonLd = {
+  '@type': 'DefinedTerm',
+  '@id': `${url}#term`,
+  name: `${battery.group} battery`,
+  termCode: battery.group,
+  inDefinedTermSet: { '@id': `${SITE}/#battery-groups` },
+  description: `${battery.group} is a ${battery.standard} battery group — ${battery.voltage}V, ${battery.capacity_ah} Ah, ${battery.cca} CCA (${battery.cca_basis}), ${battery.dimensions_mm} mm.`,
+};
+
+const datasetJsonLd = {
+  '@type': 'Dataset',
+  name: `${battery.group} battery group specification`,
+  description: `Reference specification for the ${battery.group} battery group.`,
+  url,
+  about: { '@id': `${url}#term` },
+  variableMeasured: ['voltage', 'capacity', 'CCA', 'CCA standard', 'dimensions', 'terminal'],
+  dateModified: '2026-09-15',
+  creator: { '@id': `${SITE}/#publisher` },
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{battery.group} Battery — Specs, CCA, Dimensions | World Battery Hub</title>
+    <meta name="description" content={`${battery.group} battery group (${battery.aliases.join(' / ')}) — ${battery.voltage}V, ${battery.capacity_ah} Ah, ${battery.cca} CCA (${battery.cca_basis}), ${battery.dimensions_mm} mm.`} />
+    <link rel="canonical" href={url} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      .evidence { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 40%; }
+      .related { display: flex; flex-wrap: wrap; gap: 8px; }
+      .related a { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 4px 10px; text-decoration: none; font-size: 0.9rem; }
+    </style>
+    <script type="application/ld+json" set:html={JSON.stringify(definedTermJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(datasetJsonLd)} />
+  </head>
+  <body>
+    <div class="container">
+      <p class="muted"><a href="/">← Battery Data</a> · Entity: <strong>BatteryGroup</strong></p>
+      <h1>{battery.group} Battery</h1>
+      <p class="muted">Aliases: {battery.aliases.join(' · ')} · Standard family: {battery.standard}</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> The {battery.group} battery is a {battery.standard}-family group — a
+        {battery.voltage}V lead-acid case of {battery.dimensions_mm} mm with {battery.terminal} terminals, typically
+        {battery.capacity_ah} Ah and {battery.cca} cold cranking amps ({battery.cca_basis}).
+      </div>
+
+      <h2>Specification</h2>
+      <table>
+        <tbody>
+          <tr><th>Entity type</th><td>{battery.entityType}</td></tr>
+          <tr><th>Aliases</th><td>{battery.aliases.join(' / ')}</td></tr>
+          <tr><th>Standard family</th><td>{battery.standard}</td></tr>
+          <tr><th>Voltage</th><td>{battery.voltage}V</td></tr>
+          <tr><th>Typical capacity</th><td>{battery.capacity_ah} Ah</td></tr>
+          <tr><th>Typical CCA</th><td>{battery.cca} A</td></tr>
+          <tr><th>CCA basis</th><td>{battery.cca_basis}</td></tr>
+          <tr><th>Dimensions (L×W×H)</th><td>{battery.dimensions_mm} mm</td></tr>
+          <tr><th>Terminal</th><td>{battery.terminal}</td></tr>
+          <tr><th>Technology</th><td>{battery.technology}</td></tr>
+          <tr><th>Applications</th><td>{battery.applications.join(', ')}</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Evidence</h2>
+      <div class="evidence">
+        <p><strong>CCA {battery.cca} A</strong> — {battery.cca_basis}</p>
+        <p class="muted">
+          Source: {battery.evidence.source} · Date: {battery.evidence.date} · Confidence: {battery.evidence.confidence}
+        </p>
+      </div>
+
+      <h2>Related</h2>
+      <div class="related">
+        <a href="https://worldbatteryhub.com/lead-acid/battery-group-sizes/">Group sizes explained</a>
+        <a href="https://worldbatteryhub.com/lead-acid/cca/what-is-cca/">What is CCA</a>
+        <a href="/cca/">CCA reference</a>
+        <a href="/dimensions-terminals/">Dimensions &amp; terminals</a>
+        <a href="https://technology.worldbatteryhub.com/plate-grid-design/">Plate &amp; grid design</a>
+        <a href="https://testing.worldbatteryhub.com/cca-testing/">CCA testing</a>
+      </div>
+
+      <p class="muted">Values are cross-verified typical ranges, not a substitute for a specific battery's datasheet. Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.</p>
+    </div>
+  </body>
+</html>
