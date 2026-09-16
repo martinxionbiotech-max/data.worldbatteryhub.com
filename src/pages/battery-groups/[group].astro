@@ -73,30 +73,66 @@ const datasetJsonLd = {
         {battery.capacity_ah} Ah and {battery.cca} cold cranking amps ({battery.cca_basis}).
       </div>
 
-      <h2>Specification</h2>
+      <h2>Quick facts</h2>
+      <div class="related">
+        <a>{battery.voltage}V</a>
+        <a>{battery.capacity_ah} Ah</a>
+        <a>{battery.cca} CCA</a>
+        <a>{battery.dimensions_mm} mm</a>
+      </div>
+
+      <h2>Identification</h2>
       <table>
         <tbody>
           <tr><th>Entity type</th><td>{battery.entityType}</td></tr>
+          <tr><th>Group name</th><td>{battery.group}</td></tr>
           <tr><th>Aliases</th><td>{battery.aliases.join(' / ')}</td></tr>
           <tr><th>Standard family</th><td>{battery.standard}</td></tr>
-          <tr><th>Voltage</th><td>{battery.voltage}V</td></tr>
-          <tr><th>Typical capacity</th><td>{battery.capacity_ah} Ah</td></tr>
-          <tr><th>Typical CCA</th><td>{battery.cca} A</td></tr>
-          <tr><th>CCA basis</th><td>{battery.cca_basis}</td></tr>
-          <tr><th>Dimensions (L×W×H)</th><td>{battery.dimensions_mm} mm</td></tr>
-          <tr><th>Terminal</th><td>{battery.terminal}</td></tr>
-          <tr><th>Technology</th><td>{battery.technology}</td></tr>
-          <tr><th>Applications</th><td>{battery.applications.join(', ')}</td></tr>
         </tbody>
       </table>
 
-      <h2>Evidence</h2>
+      <h2>Specification</h2>
+      <table>
+        <tbody>
+          <tr><th>Voltage</th><td>{battery.voltage}V</td></tr>
+          <tr><th>Typical capacity</th><td>{battery.capacity_ah} Ah</td></tr>
+          <tr><th>Typical CCA</th><td>{battery.cca} A</td></tr>
+          <tr><th>Dimensions (L×W×H)</th><td>{battery.dimensions_mm} mm</td></tr>
+          <tr><th>Terminal</th><td>{battery.terminal}</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Standards &amp; measurement context</h2>
+      <table>
+        <tbody>
+          <tr><th>Naming standard</th><td>{battery.standard}</td></tr>
+          <tr><th>CCA basis</th><td>{battery.cca_basis}</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        The CCA figure is defined by its test standard — values from different standards are not directly
+        interchangeable. Capacity values are typical ranges, not a substitute for a specific battery's datasheet.
+      </p>
+
+      <h2>Applications</h2>
+      <ul>
+        {battery.applications.map((a) => <li>{a}</li>)}
+      </ul>
+
+      <h2>Technology variants</h2>
+      <p>
+        {battery.technology} — see <a href="https://worldbatteryhub.com/lead-acid/types/">the lead-acid type
+        family</a> for the design trade-offs behind the label.
+      </p>
+
+      <h2>Sources &amp; verification</h2>
       <div class="evidence">
         <p><strong>CCA {battery.cca} A</strong> — {battery.cca_basis}</p>
         <p class="muted">
           Source: {battery.evidence.source} · Date: {battery.evidence.date} · Confidence: {battery.evidence.confidence}
         </p>
       </div>
+      <p class="muted">Last verified: {battery.evidence.date}</p>
 
       <h2>Related</h2>
       <div class="related">
