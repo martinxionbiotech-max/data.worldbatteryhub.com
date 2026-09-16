@@ -125,6 +125,19 @@ const datasetJsonLd = {
         family</a> for the design trade-offs behind the label.
       </p>
 
+      {battery.class_peers && battery.class_peers.length > 0 && (
+        <div>
+          <h2>Equivalent capacity class</h2>
+          <p>
+            {battery.capacity_class} — other groups in a similar capacity class. This is a capacity comparison,
+            not a physical interchange: dimensions and terminals differ between naming families.
+          </p>
+          <div class="related">
+            {battery.class_peers.map((p) => <a href={`/battery-groups/${p.id}/`}>{p.group}</a>)}
+          </div>
+        </div>
+      )}
+
       <h2>Sources &amp; verification</h2>
       <div class="evidence">
         <p><strong>CCA {battery.cca} A</strong> — {battery.cca_basis}</p>

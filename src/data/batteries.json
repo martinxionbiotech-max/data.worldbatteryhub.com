@@ -26,7 +26,26 @@
         "source": "Varta / Bosch / Exide datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~55–65 Ah",
+      "class_peers": [
+        {
+          "id": "h5",
+          "group": "H5"
+        },
+        {
+          "id": "55d23",
+          "group": "55D23"
+        },
+        {
+          "id": "65d23",
+          "group": "65D23"
+        },
+        {
+          "id": "group-34",
+          "group": "Group 34"
+        }
+      ]
     },
     {
       "id": "h5",
@@ -52,7 +71,26 @@
         "source": "Varta / Bosch / Exide datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~55–65 Ah",
+      "class_peers": [
+        {
+          "id": "h4",
+          "group": "H4"
+        },
+        {
+          "id": "55d23",
+          "group": "55D23"
+        },
+        {
+          "id": "65d23",
+          "group": "65D23"
+        },
+        {
+          "id": "group-34",
+          "group": "Group 34"
+        }
+      ]
     },
     {
       "id": "h6",
@@ -79,7 +117,26 @@
         "source": "Varta / Bosch / Exide datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~70–80 Ah",
+      "class_peers": [
+        {
+          "id": "h7",
+          "group": "H7"
+        },
+        {
+          "id": "n70",
+          "group": "N70"
+        },
+        {
+          "id": "group24",
+          "group": "Group 24"
+        },
+        {
+          "id": "group-65",
+          "group": "Group 65"
+        }
+      ]
     },
     {
       "id": "h7",
@@ -107,7 +164,26 @@
         "source": "Varta / Bosch / Exide datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~70–80 Ah",
+      "class_peers": [
+        {
+          "id": "h6",
+          "group": "H6"
+        },
+        {
+          "id": "n70",
+          "group": "N70"
+        },
+        {
+          "id": "group24",
+          "group": "Group 24"
+        },
+        {
+          "id": "group-65",
+          "group": "Group 65"
+        }
+      ]
     },
     {
       "id": "h8",
@@ -134,7 +210,18 @@
         "source": "Varta / Bosch / Exide datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~90–95 Ah",
+      "class_peers": [
+        {
+          "id": "group27",
+          "group": "Group 27"
+        },
+        {
+          "id": "group-49",
+          "group": "Group 49"
+        }
+      ]
     },
     {
       "id": "h9",
@@ -161,7 +248,18 @@
         "source": "Varta / Bosch / Exide datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~100–105 Ah",
+      "class_peers": [
+        {
+          "id": "n100",
+          "group": "N100"
+        },
+        {
+          "id": "group31",
+          "group": "Group 31"
+        }
+      ]
     },
     {
       "id": "55d23",
@@ -185,7 +283,26 @@
         "source": "Yuasa / GS Yuasa datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~55–65 Ah",
+      "class_peers": [
+        {
+          "id": "h4",
+          "group": "H4"
+        },
+        {
+          "id": "h5",
+          "group": "H5"
+        },
+        {
+          "id": "65d23",
+          "group": "65D23"
+        },
+        {
+          "id": "group-34",
+          "group": "Group 34"
+        }
+      ]
     },
     {
       "id": "n150",
@@ -210,7 +327,9 @@
         "source": "Yuasa / GS Yuasa datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~135 Ah",
+      "class_peers": []
     },
     {
       "id": "n200",
@@ -235,7 +354,14 @@
         "source": "Yuasa / GS Yuasa datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~200+ Ah",
+      "class_peers": [
+        {
+          "id": "group8d",
+          "group": "Group 8D"
+        }
+      ]
     },
     {
       "id": "group31",
@@ -261,7 +387,18 @@
         "source": "BCI + manufacturer datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~100–105 Ah",
+      "class_peers": [
+        {
+          "id": "h9",
+          "group": "H9"
+        },
+        {
+          "id": "n100",
+          "group": "N100"
+        }
+      ]
     },
     {
       "id": "group8d",
@@ -287,7 +424,14 @@
         "source": "BCI + manufacturer datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~200+ Ah",
+      "class_peers": [
+        {
+          "id": "n200",
+          "group": "N200"
+        }
+      ]
     },
     {
       "id": "group24",
@@ -313,7 +457,26 @@
         "source": "BCI + manufacturer datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~70–80 Ah",
+      "class_peers": [
+        {
+          "id": "h6",
+          "group": "H6"
+        },
+        {
+          "id": "h7",
+          "group": "H7"
+        },
+        {
+          "id": "n70",
+          "group": "N70"
+        },
+        {
+          "id": "group-65",
+          "group": "Group 65"
+        }
+      ]
     },
     {
       "id": "group27",
@@ -339,7 +502,18 @@
         "source": "BCI + manufacturer datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~90–95 Ah",
+      "class_peers": [
+        {
+          "id": "h8",
+          "group": "H8"
+        },
+        {
+          "id": "group-49",
+          "group": "Group 49"
+        }
+      ]
     },
     {
       "id": "group4d",
@@ -365,7 +539,9 @@
         "source": "BCI + manufacturer datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~160–180 Ah",
+      "class_peers": []
     },
     {
       "id": "65d23",
@@ -389,7 +565,26 @@
         "source": "Yuasa / GS Yuasa datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~55–65 Ah",
+      "class_peers": [
+        {
+          "id": "h4",
+          "group": "H4"
+        },
+        {
+          "id": "h5",
+          "group": "H5"
+        },
+        {
+          "id": "55d23",
+          "group": "55D23"
+        },
+        {
+          "id": "group-34",
+          "group": "Group 34"
+        }
+      ]
     },
     {
       "id": "n70",
@@ -414,7 +609,26 @@
         "source": "Yuasa / GS Yuasa datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~70–80 Ah",
+      "class_peers": [
+        {
+          "id": "h6",
+          "group": "H6"
+        },
+        {
+          "id": "h7",
+          "group": "H7"
+        },
+        {
+          "id": "group24",
+          "group": "Group 24"
+        },
+        {
+          "id": "group-65",
+          "group": "Group 65"
+        }
+      ]
     },
     {
       "id": "n100",
@@ -439,7 +653,18 @@
         "source": "Yuasa / GS Yuasa datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~100–105 Ah",
+      "class_peers": [
+        {
+          "id": "h9",
+          "group": "H9"
+        },
+        {
+          "id": "group31",
+          "group": "Group 31"
+        }
+      ]
     },
     {
       "id": "n120",
@@ -464,7 +689,9 @@
         "source": "Yuasa / GS Yuasa datasheets",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~120 Ah",
+      "class_peers": []
     },
     {
       "id": "group-34",
@@ -491,7 +718,26 @@
         "source": "BCI group-size reference; Summit Racing / AutoZone product specs",
         "date": "2026-09",
         "confidence": "Medium"
-      }
+      },
+      "capacity_class": "~55–65 Ah",
+      "class_peers": [
+        {
+          "id": "h4",
+          "group": "H4"
+        },
+        {
+          "id": "h5",
+          "group": "H5"
+        },
+        {
+          "id": "55d23",
+          "group": "55D23"
+        },
+        {
+          "id": "65d23",
+          "group": "65D23"
+        }
+      ]
     },
     {
       "id": "group-49",
@@ -519,7 +765,18 @@
         "source": "BCI group-size reference; H8/L5/88L5 cross-reference",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~90–95 Ah",
+      "class_peers": [
+        {
+          "id": "h8",
+          "group": "H8"
+        },
+        {
+          "id": "group27",
+          "group": "Group 27"
+        }
+      ]
     },
     {
       "id": "group-65",
@@ -544,7 +801,26 @@
         "source": "BCI group-size reference; AutoZone / NAPA product specs",
         "date": "2026-09",
         "confidence": "Medium"
-      }
+      },
+      "capacity_class": "~70–80 Ah",
+      "class_peers": [
+        {
+          "id": "h6",
+          "group": "H6"
+        },
+        {
+          "id": "h7",
+          "group": "H7"
+        },
+        {
+          "id": "n70",
+          "group": "N70"
+        },
+        {
+          "id": "group24",
+          "group": "Group 24"
+        }
+      ]
     },
     {
       "id": "gc2",
@@ -571,7 +847,9 @@
         "source": "Manufacturer datasheets (Trojan, US Battery)",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~215 Ah (6V)",
+      "class_peers": []
     },
     {
       "id": "gc12",
@@ -596,7 +874,9 @@
         "source": "Manufacturer datasheets (Trojan, US Battery)",
         "date": "2026-09",
         "confidence": "High"
-      }
+      },
+      "capacity_class": "~150 Ah (12V)",
+      "class_peers": []
     }
   ]
 }
