@@ -545,6 +545,58 @@
         "date": "2026-09",
         "confidence": "Medium"
       }
+    },
+    {
+      "id": "gc2",
+      "group": "GC2",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "Golf cart",
+        "6V deep-cycle"
+      ],
+      "standard": "BCI",
+      "voltage": 6,
+      "capacity_ah": "215",
+      "cca": "—",
+      "cca_basis": "Not cranking-rated (deep-cycle)",
+      "dimensions_mm": "260 × 180 × 275",
+      "terminal": "Flag / embedded",
+      "technology": "Flooded deep-cycle",
+      "applications": [
+        "Golf carts",
+        "Floor machines",
+        "Off-grid 6V banks"
+      ],
+      "evidence": {
+        "source": "Manufacturer datasheets (Trojan, US Battery)",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "gc12",
+      "group": "GC12",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "12V golf cart"
+      ],
+      "standard": "BCI",
+      "voltage": 12,
+      "capacity_ah": "150",
+      "cca": "—",
+      "cca_basis": "Not cranking-rated (deep-cycle)",
+      "dimensions_mm": "327 × 181 × 278",
+      "terminal": "Flag / threaded",
+      "technology": "Flooded deep-cycle",
+      "applications": [
+        "Golf carts",
+        "Floor machines"
+      ],
+      "evidence": {
+        "source": "Manufacturer datasheets (Trojan, US Battery)",
+        "date": "2026-09",
+        "confidence": "High"
+      }
     }
   ]
 }
