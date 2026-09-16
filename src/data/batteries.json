@@ -1,24 +1,550 @@
 {
-  "generated": "2026-09-15",
+  "generated": "2026-09-16",
   "note": "Entity database. Each group is a BatteryGroup entity with aliases, dimensions, terminal, CCA (with its standard), and an evidence record. Values are cross-verified typical ranges, not a substitute for a specific battery's datasheet.",
   "batteries": [
-    { "id": "h4", "group": "H4", "entityType": "BatteryGroup", "aliases": ["L1", "LB1", "DIN 55"], "standard": "EN/DIN", "voltage": 12, "capacity_ah": "55–60", "cca": "500–600", "cca_basis": "EN 50342 (−18°C)", "dimensions_mm": "207 × 175 × 190", "terminal": "SAE post", "technology": "Flooded / EFB / AGM", "applications": ["Small / compact cars"], "evidence": { "source": "Varta / Bosch / Exide datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "h5", "group": "H5", "entityType": "BatteryGroup", "aliases": ["L2", "LB2", "DIN 60"], "standard": "EN/DIN", "voltage": 12, "capacity_ah": "60", "cca": "600", "cca_basis": "EN 50342 (−18°C)", "dimensions_mm": "242 × 175 × 190", "terminal": "SAE post", "technology": "Flooded / EFB / AGM", "applications": ["Compact / midsize cars"], "evidence": { "source": "Varta / Bosch / Exide datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "h6", "group": "H6", "entityType": "BatteryGroup", "aliases": ["L3", "LB3", "DIN 70"], "standard": "EN/DIN", "voltage": 12, "capacity_ah": "70", "cca": "640–700", "cca_basis": "EN 50342 (−18°C)", "dimensions_mm": "278 × 175 × 190", "terminal": "SAE post", "technology": "Flooded / EFB / AGM", "applications": ["Midsize cars", "Start-stop"], "evidence": { "source": "Varta / Bosch / Exide datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "h7", "group": "H7", "entityType": "BatteryGroup", "aliases": ["L4", "LN4", "DIN 80"], "standard": "EN/DIN", "voltage": 12, "capacity_ah": "70–80", "cca": "760", "cca_basis": "EN 50342 (−18°C)", "dimensions_mm": "315 × 175 × 190", "terminal": "SAE post", "technology": "Flooded / EFB / AGM", "applications": ["Large cars", "SUV", "Start-stop"], "evidence": { "source": "Varta / Bosch / Exide datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "h8", "group": "H8", "entityType": "BatteryGroup", "aliases": ["L5", "LB5", "DIN 90"], "standard": "EN/DIN", "voltage": 12, "capacity_ah": "90–95", "cca": "850–900", "cca_basis": "EN 50342 (−18°C)", "dimensions_mm": "352 × 175 × 190", "terminal": "SAE post", "technology": "AGM / EFB", "applications": ["Large SUV", "Light truck"], "evidence": { "source": "Varta / Bosch / Exide datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "h9", "group": "H9", "entityType": "BatteryGroup", "aliases": ["L6", "LB6", "DIN 105"], "standard": "EN/DIN", "voltage": 12, "capacity_ah": "105", "cca": "950", "cca_basis": "EN 50342 (−18°C)", "dimensions_mm": "394 × 175 × 190", "terminal": "SAE post", "technology": "AGM / EFB", "applications": ["Heavy-duty", "Premium vehicles"], "evidence": { "source": "Varta / Bosch / Exide datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "55d23", "group": "55D23", "entityType": "BatteryGroup", "aliases": ["D23"], "standard": "JIS", "voltage": 12, "capacity_ah": "60", "cca": "540", "cca_basis": "JIS D5301 (−15°C)", "dimensions_mm": "232 × 173 × 225", "terminal": "JIS type A", "technology": "Flooded MF", "applications": ["Japanese passenger cars"], "evidence": { "source": "Yuasa / GS Yuasa datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "n150", "group": "N150", "entityType": "BatteryGroup", "aliases": ["145G51"], "standard": "JIS", "voltage": 12, "capacity_ah": "135", "cca": "900", "cca_basis": "JIS D5301 (−15°C)", "dimensions_mm": "508 × 222 × 212", "terminal": "JIS type A (large taper)", "technology": "Heavy-duty flooded", "applications": ["Trucks", "Heavy-duty"], "evidence": { "source": "Yuasa / GS Yuasa datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "n200", "group": "N200", "entityType": "BatteryGroup", "aliases": ["190H52"], "standard": "JIS", "voltage": 12, "capacity_ah": "200", "cca": "1100", "cca_basis": "JIS D5301 (−15°C)", "dimensions_mm": "520 × 278 × 220", "terminal": "JIS type A (large taper)", "technology": "Heavy-duty flooded", "applications": ["Trucks", "Heavy-duty"], "evidence": { "source": "Yuasa / GS Yuasa datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "group31", "group": "Group 31", "entityType": "BatteryGroup", "aliases": ["31"], "standard": "BCI/SAE", "voltage": 12, "capacity_ah": "100", "cca": "900", "cca_basis": "SAE J537 (−18°C)", "dimensions_mm": "330 × 173 × 240", "terminal": "SAE stud / post", "technology": "Flooded / AGM", "applications": ["Commercial", "Marine", "Trucks"], "evidence": { "source": "BCI + manufacturer datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "group8d", "group": "Group 8D", "entityType": "BatteryGroup", "aliases": ["8D"], "standard": "BCI/SAE", "voltage": 12, "capacity_ah": "200+", "cca": "1400+", "cca_basis": "SAE J537 (−18°C)", "dimensions_mm": "527 × 283 × 250", "terminal": "SAE stud", "technology": "Heavy-duty flooded", "applications": ["Commercial", "Marine", "Diesel"], "evidence": { "source": "BCI + manufacturer datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "group24", "group": "Group 24", "entityType": "BatteryGroup", "aliases": ["24"], "standard": "BCI/SAE", "voltage": 12, "capacity_ah": "70–75", "cca": "700", "cca_basis": "SAE J537 (−18°C)", "dimensions_mm": "260 × 173 × 225", "terminal": "SAE post", "technology": "Flooded / AGM", "applications": ["Marine", "RV", "Passenger cars"], "evidence": { "source": "BCI + manufacturer datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "group27", "group": "Group 27", "entityType": "BatteryGroup", "aliases": ["27"], "standard": "BCI/SAE", "voltage": 12, "capacity_ah": "90–95", "cca": "800", "cca_basis": "SAE J537 (−18°C)", "dimensions_mm": "306 × 173 × 225", "terminal": "SAE post", "technology": "Flooded / AGM", "applications": ["Marine", "RV", "Trucks"], "evidence": { "source": "BCI + manufacturer datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "group4d", "group": "Group 4D", "entityType": "BatteryGroup", "aliases": ["4D"], "standard": "BCI/SAE", "voltage": 12, "capacity_ah": "160–180", "cca": "1100", "cca_basis": "SAE J537 (−18°C)", "dimensions_mm": "527 × 222 × 250", "terminal": "SAE stud", "technology": "Heavy-duty flooded", "applications": ["Commercial", "Marine", "Diesel"], "evidence": { "source": "BCI + manufacturer datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "65d23", "group": "65D23", "entityType": "BatteryGroup", "aliases": ["D23"], "standard": "JIS", "voltage": 12, "capacity_ah": "65", "cca": "580", "cca_basis": "JIS D5301 (−15°C)", "dimensions_mm": "232 × 173 × 225", "terminal": "JIS type A", "technology": "Flooded MF", "applications": ["Japanese passenger cars"], "evidence": { "source": "Yuasa / GS Yuasa datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "n70", "group": "N70", "entityType": "BatteryGroup", "aliases": ["65G24"], "standard": "JIS", "voltage": 12, "capacity_ah": "70", "cca": "700", "cca_basis": "JIS D5301 (−15°C)", "dimensions_mm": "260 × 173 × 222", "terminal": "JIS type A", "technology": "Flooded MF", "applications": ["Passenger cars", "Light trucks"], "evidence": { "source": "Yuasa / GS Yuasa datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "n100", "group": "N100", "entityType": "BatteryGroup", "aliases": ["95E41"], "standard": "JIS", "voltage": 12, "capacity_ah": "100", "cca": "800", "cca_basis": "JIS D5301 (−15°C)", "dimensions_mm": "408 × 172 × 213", "terminal": "JIS type A (large taper)", "technology": "Heavy-duty flooded", "applications": ["Trucks", "Buses"], "evidence": { "source": "Yuasa / GS Yuasa datasheets", "date": "2026-09", "confidence": "High" } },
-    { "id": "n120", "group": "N120", "entityType": "BatteryGroup", "aliases": ["115F51"], "standard": "JIS", "voltage": 12, "capacity_ah": "120", "cca": "900", "cca_basis": "JIS D5301 (−15°C)", "dimensions_mm": "503 × 180 × 216", "terminal": "JIS type A (large taper)", "technology": "Heavy-duty flooded", "applications": ["Trucks", "Buses"], "evidence": { "source": "Yuasa / GS Yuasa datasheets", "date": "2026-09", "confidence": "High" } }
+    {
+      "id": "h4",
+      "group": "H4",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "L1",
+        "LB1",
+        "DIN 55"
+      ],
+      "standard": "EN/DIN",
+      "voltage": 12,
+      "capacity_ah": "55–60",
+      "cca": "500–600",
+      "cca_basis": "EN 50342 (−18°C)",
+      "dimensions_mm": "207 × 175 × 190",
+      "terminal": "SAE post",
+      "technology": "Flooded / EFB / AGM",
+      "applications": [
+        "Small / compact cars"
+      ],
+      "evidence": {
+        "source": "Varta / Bosch / Exide datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "h5",
+      "group": "H5",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "L2",
+        "LB2",
+        "DIN 60"
+      ],
+      "standard": "EN/DIN",
+      "voltage": 12,
+      "capacity_ah": "60",
+      "cca": "600",
+      "cca_basis": "EN 50342 (−18°C)",
+      "dimensions_mm": "242 × 175 × 190",
+      "terminal": "SAE post",
+      "technology": "Flooded / EFB / AGM",
+      "applications": [
+        "Compact / midsize cars"
+      ],
+      "evidence": {
+        "source": "Varta / Bosch / Exide datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "h6",
+      "group": "H6",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "L3",
+        "LB3",
+        "DIN 70"
+      ],
+      "standard": "EN/DIN",
+      "voltage": 12,
+      "capacity_ah": "70",
+      "cca": "640–700",
+      "cca_basis": "EN 50342 (−18°C)",
+      "dimensions_mm": "278 × 175 × 190",
+      "terminal": "SAE post",
+      "technology": "Flooded / EFB / AGM",
+      "applications": [
+        "Midsize cars",
+        "Start-stop"
+      ],
+      "evidence": {
+        "source": "Varta / Bosch / Exide datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "h7",
+      "group": "H7",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "L4",
+        "LN4",
+        "DIN 80"
+      ],
+      "standard": "EN/DIN",
+      "voltage": 12,
+      "capacity_ah": "70–80",
+      "cca": "760",
+      "cca_basis": "EN 50342 (−18°C)",
+      "dimensions_mm": "315 × 175 × 190",
+      "terminal": "SAE post",
+      "technology": "Flooded / EFB / AGM",
+      "applications": [
+        "Large cars",
+        "SUV",
+        "Start-stop"
+      ],
+      "evidence": {
+        "source": "Varta / Bosch / Exide datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "h8",
+      "group": "H8",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "L5",
+        "LB5",
+        "DIN 90"
+      ],
+      "standard": "EN/DIN",
+      "voltage": 12,
+      "capacity_ah": "90–95",
+      "cca": "850–900",
+      "cca_basis": "EN 50342 (−18°C)",
+      "dimensions_mm": "352 × 175 × 190",
+      "terminal": "SAE post",
+      "technology": "AGM / EFB",
+      "applications": [
+        "Large SUV",
+        "Light truck"
+      ],
+      "evidence": {
+        "source": "Varta / Bosch / Exide datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "h9",
+      "group": "H9",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "L6",
+        "LB6",
+        "DIN 105"
+      ],
+      "standard": "EN/DIN",
+      "voltage": 12,
+      "capacity_ah": "105",
+      "cca": "950",
+      "cca_basis": "EN 50342 (−18°C)",
+      "dimensions_mm": "394 × 175 × 190",
+      "terminal": "SAE post",
+      "technology": "AGM / EFB",
+      "applications": [
+        "Heavy-duty",
+        "Premium vehicles"
+      ],
+      "evidence": {
+        "source": "Varta / Bosch / Exide datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "55d23",
+      "group": "55D23",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "D23"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "60",
+      "cca": "540",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "232 × 173 × 225",
+      "terminal": "JIS type A",
+      "technology": "Flooded MF",
+      "applications": [
+        "Japanese passenger cars"
+      ],
+      "evidence": {
+        "source": "Yuasa / GS Yuasa datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "n150",
+      "group": "N150",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "145G51"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "135",
+      "cca": "900",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "508 × 222 × 212",
+      "terminal": "JIS type A (large taper)",
+      "technology": "Heavy-duty flooded",
+      "applications": [
+        "Trucks",
+        "Heavy-duty"
+      ],
+      "evidence": {
+        "source": "Yuasa / GS Yuasa datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "n200",
+      "group": "N200",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "190H52"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "200",
+      "cca": "1100",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "520 × 278 × 220",
+      "terminal": "JIS type A (large taper)",
+      "technology": "Heavy-duty flooded",
+      "applications": [
+        "Trucks",
+        "Heavy-duty"
+      ],
+      "evidence": {
+        "source": "Yuasa / GS Yuasa datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "group31",
+      "group": "Group 31",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "31"
+      ],
+      "standard": "BCI/SAE",
+      "voltage": 12,
+      "capacity_ah": "100",
+      "cca": "900",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "330 × 173 × 240",
+      "terminal": "SAE stud / post",
+      "technology": "Flooded / AGM",
+      "applications": [
+        "Commercial",
+        "Marine",
+        "Trucks"
+      ],
+      "evidence": {
+        "source": "BCI + manufacturer datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "group8d",
+      "group": "Group 8D",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "8D"
+      ],
+      "standard": "BCI/SAE",
+      "voltage": 12,
+      "capacity_ah": "200+",
+      "cca": "1400+",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "527 × 283 × 250",
+      "terminal": "SAE stud",
+      "technology": "Heavy-duty flooded",
+      "applications": [
+        "Commercial",
+        "Marine",
+        "Diesel"
+      ],
+      "evidence": {
+        "source": "BCI + manufacturer datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "group24",
+      "group": "Group 24",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "24"
+      ],
+      "standard": "BCI/SAE",
+      "voltage": 12,
+      "capacity_ah": "70–75",
+      "cca": "700",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "260 × 173 × 225",
+      "terminal": "SAE post",
+      "technology": "Flooded / AGM",
+      "applications": [
+        "Marine",
+        "RV",
+        "Passenger cars"
+      ],
+      "evidence": {
+        "source": "BCI + manufacturer datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "group27",
+      "group": "Group 27",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "27"
+      ],
+      "standard": "BCI/SAE",
+      "voltage": 12,
+      "capacity_ah": "90–95",
+      "cca": "800",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "306 × 173 × 225",
+      "terminal": "SAE post",
+      "technology": "Flooded / AGM",
+      "applications": [
+        "Marine",
+        "RV",
+        "Trucks"
+      ],
+      "evidence": {
+        "source": "BCI + manufacturer datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "group4d",
+      "group": "Group 4D",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "4D"
+      ],
+      "standard": "BCI/SAE",
+      "voltage": 12,
+      "capacity_ah": "160–180",
+      "cca": "1100",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "527 × 222 × 250",
+      "terminal": "SAE stud",
+      "technology": "Heavy-duty flooded",
+      "applications": [
+        "Commercial",
+        "Marine",
+        "Diesel"
+      ],
+      "evidence": {
+        "source": "BCI + manufacturer datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "65d23",
+      "group": "65D23",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "D23"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "65",
+      "cca": "580",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "232 × 173 × 225",
+      "terminal": "JIS type A",
+      "technology": "Flooded MF",
+      "applications": [
+        "Japanese passenger cars"
+      ],
+      "evidence": {
+        "source": "Yuasa / GS Yuasa datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "n70",
+      "group": "N70",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "65G24"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "70",
+      "cca": "700",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "260 × 173 × 222",
+      "terminal": "JIS type A",
+      "technology": "Flooded MF",
+      "applications": [
+        "Passenger cars",
+        "Light trucks"
+      ],
+      "evidence": {
+        "source": "Yuasa / GS Yuasa datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "n100",
+      "group": "N100",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "95E41"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "100",
+      "cca": "800",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "408 × 172 × 213",
+      "terminal": "JIS type A (large taper)",
+      "technology": "Heavy-duty flooded",
+      "applications": [
+        "Trucks",
+        "Buses"
+      ],
+      "evidence": {
+        "source": "Yuasa / GS Yuasa datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "n120",
+      "group": "N120",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "115F51"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "120",
+      "cca": "900",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "503 × 180 × 216",
+      "terminal": "JIS type A (large taper)",
+      "technology": "Heavy-duty flooded",
+      "applications": [
+        "Trucks",
+        "Buses"
+      ],
+      "evidence": {
+        "source": "Yuasa / GS Yuasa datasheets",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "group-34",
+      "group": "Group 34",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "34",
+        "34R"
+      ],
+      "standard": "BCI/SAE",
+      "voltage": 12,
+      "capacity_ah": "55–75",
+      "cca": "750–900",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "260 × 175 × 182 (approx.)",
+      "terminal": "Top post",
+      "technology": "Flooded / AGM",
+      "applications": [
+        "Trucks",
+        "SUVs",
+        "high-power automotive"
+      ],
+      "evidence": {
+        "source": "BCI group-size reference; Summit Racing / AutoZone product specs",
+        "date": "2026-09",
+        "confidence": "Medium"
+      }
+    },
+    {
+      "id": "group-49",
+      "group": "Group 49",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "H8",
+        "L5",
+        "88L5"
+      ],
+      "standard": "BCI/SAE (DIN/EN H8)",
+      "voltage": 12,
+      "capacity_ah": "80–95",
+      "cca": "850–950",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "353 × 175 × 190 (H8 equivalent)",
+      "terminal": "Top post",
+      "technology": "Flooded / AGM / EFB",
+      "applications": [
+        "Luxury cars",
+        "trucks",
+        "high-electrical-load vehicles"
+      ],
+      "evidence": {
+        "source": "BCI group-size reference; H8/L5/88L5 cross-reference",
+        "date": "2026-09",
+        "confidence": "High"
+      }
+    },
+    {
+      "id": "group-65",
+      "group": "Group 65",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "65"
+      ],
+      "standard": "BCI/SAE",
+      "voltage": 12,
+      "capacity_ah": "70–75",
+      "cca": "750–950",
+      "cca_basis": "SAE J537 (−18°C)",
+      "dimensions_mm": "306 × 190 × 192 (approx.)",
+      "terminal": "Top post",
+      "technology": "Flooded / AGM",
+      "applications": [
+        "Ford/Lincoln trucks",
+        "SUVs"
+      ],
+      "evidence": {
+        "source": "BCI group-size reference; AutoZone / NAPA product specs",
+        "date": "2026-09",
+        "confidence": "Medium"
+      }
+    }
   ]
 }
