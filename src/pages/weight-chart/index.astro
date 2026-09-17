@@ -1,0 +1,88 @@
+---
+import batteries from '../../data/batteries.json';
+
+const SITE = 'https://data.worldbatteryhub.com';
+const sorted = [...batteries.batteries].sort((a, b) => {
+  const wa = parseFloat(String(a.weight_kg).split('–')[0]) || 0;
+  const wb = parseFloat(String(b.weight_kg).split('–')[0]) || 0;
+  return wa - wb;
+});
+
+const datasetJsonLd = {
+  '@type': 'Dataset',
+  name: 'Battery group weight reference',
+  description: 'Typical battery weights by group — 40 BCI, EN/DIN and JIS groups compiled from reference tables and manufacturer datasheets.',
+  url: `${SITE}/weight-chart/`,
+  variableMeasured: ['typical weight'],
+  dateModified: '2026-09-17',
+  creator: { '@id': `${SITE}/#publisher` },
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battery Weight Chart — 40 Groups by Typical Weight | World Battery Hub</title>
+    <meta name="description" content="Typical battery weights by group — from the 8 kg kei-car 40B19 to the 60 kg Group 8D. 40 BCI, EN/DIN and JIS groups, compiled and cross-checked." />
+    <link rel="canonical" href={`${SITE}/weight-chart/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+    <script type="application/ld+json" set:html={JSON.stringify(datasetJsonLd)} />
+  </head>
+  <body>
+    <div class="container">
+      <p class="muted"><a href="/">← Battery Data</a> · Reference: <strong>BatteryWeight</strong></p>
+      <h1>Battery Weight Chart</h1>
+      <p class="muted">Typical weights for 40 BCI, EN/DIN and JIS groups · Last reviewed 2026-09-17</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Battery weight scales with the case and the lead: from the
+        <strong>~8–10 kg</strong> kei-car 40B19 to the <strong>~55–60 kg</strong> Group 8D, with the common
+        automotive classes (H5–H7, Group 24–34) sitting in the <strong>15–25 kg</strong> band. Weight is a
+        useful sanity check on a spec — a battery that weighs far less than its class is giving something away.
+      </div>
+
+      <h2>All groups by typical weight</h2>
+      <table>
+        <thead><tr><th>Group</th><th>Family</th><th>Typical weight</th><th>Dimensions (mm)</th></tr></thead>
+        <tbody>
+          {sorted.map((b) => (
+            <tr>
+              <td><a href={`/battery-groups/${b.id}/`}>{b.group}</a></td>
+              <td>{b.standard}</td>
+              <td>{b.weight_kg} kg</td>
+              <td>{b.dimensions_mm}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>How to read the chart</h2>
+      <p>
+        The weights are <strong>typical values</strong>, not exact specifications — flooded, EFB and AGM builds
+        of the same group differ by a kilogram or two, and manufacturer designs vary within the group envelope.
+        The honest uses: comparing chemistries at the same size class (a lithium drop-in at roughly
+        <strong>half the lead-acid weight</strong>), estimating shipping and installation handling, and spotting
+        a spec that does not match its class.
+      </p>
+
+      <h2>Sources</h2>
+      <p class="muted">
+        Compiled from BCI/SAE, EN/DIN and JIS group reference tables, cross-checked with manufacturer
+        datasheets (Varta, Bosch, Exide and others). Values are typical ranges, not a substitute for a specific
+        battery's datasheet. Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.
+      </p>
+    </div>
+  </body>
+</html>
