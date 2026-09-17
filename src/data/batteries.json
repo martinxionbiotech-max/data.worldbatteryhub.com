@@ -23,9 +23,14 @@
         "Small / compact cars"
       ],
       "evidence": {
-        "source": "Varta / Bosch / Exide datasheets",
+        "basis": "EN/DIN group reference tables + manufacturer datasheets",
+        "sources": [
+          "EN 50342 reference tables (dimension codes)",
+          "Manufacturer datasheets (Varta, Bosch, Banner, Exide)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values; the EN code names the battery's performance class and case size."
       },
       "capacity_class": "~55–65 Ah",
       "class_peers": [
@@ -81,9 +86,14 @@
         "Compact / midsize cars"
       ],
       "evidence": {
-        "source": "Varta / Bosch / Exide datasheets",
+        "basis": "EN/DIN group reference tables + manufacturer datasheets",
+        "sources": [
+          "EN 50342 reference tables (dimension codes)",
+          "Manufacturer datasheets (Varta, Bosch, Banner, Exide)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values; the EN code names the battery's performance class and case size."
       },
       "capacity_class": "~55–65 Ah",
       "class_peers": [
@@ -140,9 +150,14 @@
         "Start-stop"
       ],
       "evidence": {
-        "source": "Varta / Bosch / Exide datasheets",
+        "basis": "EN/DIN group reference tables + manufacturer datasheets",
+        "sources": [
+          "EN 50342 reference tables (dimension codes)",
+          "Manufacturer datasheets (Varta, Bosch, Banner, Exide)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values; the EN code names the battery's performance class and case size."
       },
       "capacity_class": "~65–75 Ah",
       "class_peers": [
@@ -192,9 +207,14 @@
         "Start-stop"
       ],
       "evidence": {
-        "source": "Varta / Bosch / Exide datasheets",
+        "basis": "EN/DIN group reference tables + manufacturer datasheets",
+        "sources": [
+          "EN 50342 reference tables (dimension codes)",
+          "Manufacturer datasheets (Varta, Bosch, Banner, Exide)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values; the EN code names the battery's performance class and case size."
       },
       "capacity_class": "~80 Ah",
       "class_peers": [
@@ -235,9 +255,14 @@
         "Light truck"
       ],
       "evidence": {
-        "source": "Varta / Bosch / Exide datasheets",
+        "basis": "EN/DIN group reference tables + manufacturer datasheets",
+        "sources": [
+          "EN 50342 reference tables (dimension codes)",
+          "Manufacturer datasheets (Varta, Bosch, Banner, Exide)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values; the EN code names the battery's performance class and case size."
       },
       "capacity_class": "~90–100 Ah",
       "class_peers": [
@@ -274,9 +299,14 @@
         "Premium vehicles"
       ],
       "evidence": {
-        "source": "Varta / Bosch / Exide datasheets",
+        "basis": "EN/DIN group reference tables + manufacturer datasheets",
+        "sources": [
+          "EN 50342 reference tables (dimension codes)",
+          "Manufacturer datasheets (Varta, Bosch, Banner, Exide)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values; the EN code names the battery's performance class and case size."
       },
       "capacity_class": "~100–105 Ah",
       "class_peers": [
@@ -306,9 +336,14 @@
         "Japanese passenger cars"
       ],
       "evidence": {
-        "source": "Yuasa / GS Yuasa datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "capacity_class": "~55–65 Ah",
       "class_peers": [
@@ -363,9 +398,14 @@
         "Heavy-duty"
       ],
       "evidence": {
-        "source": "Yuasa / GS Yuasa datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "capacity_class": "~135 Ah",
       "class_peers": [],
@@ -391,9 +431,14 @@
         "Heavy-duty"
       ],
       "evidence": {
-        "source": "Yuasa / GS Yuasa datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "capacity_class": "~200+ Ah",
       "class_peers": [],
@@ -420,9 +465,14 @@
         "Trucks"
       ],
       "evidence": {
-        "source": "BCI + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~100–105 Ah",
       "class_peers": [
@@ -458,9 +508,14 @@
         "Diesel"
       ],
       "evidence": {
-        "source": "BCI + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~200+ Ah",
       "class_peers": [
@@ -492,9 +547,14 @@
         "Passenger cars"
       ],
       "evidence": {
-        "source": "BCI + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~70–80 Ah",
       "class_peers": [
@@ -538,9 +598,14 @@
         "Trucks"
       ],
       "evidence": {
-        "source": "BCI + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~90–95 Ah",
       "class_peers": [
@@ -576,9 +641,14 @@
         "Diesel"
       ],
       "evidence": {
-        "source": "BCI + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~160–180 Ah",
       "class_peers": [],
@@ -603,9 +673,14 @@
         "Japanese passenger cars"
       ],
       "evidence": {
-        "source": "Yuasa / GS Yuasa datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "capacity_class": "~55–65 Ah",
       "class_peers": [
@@ -660,9 +735,14 @@
         "Light trucks"
       ],
       "evidence": {
-        "source": "Yuasa / GS Yuasa datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "capacity_class": "~65–75 Ah",
       "class_peers": [
@@ -709,9 +789,14 @@
         "Buses"
       ],
       "evidence": {
-        "source": "Yuasa / GS Yuasa datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "capacity_class": "~100–105 Ah",
       "class_peers": [
@@ -742,9 +827,14 @@
         "Buses"
       ],
       "evidence": {
-        "source": "Yuasa / GS Yuasa datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "capacity_class": "~120 Ah",
       "class_peers": [],
@@ -772,9 +862,14 @@
         "high-power automotive"
       ],
       "evidence": {
-        "source": "BCI group-size reference; Summit Racing / AutoZone product specs",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "Medium"
+        "confidence": "Medium",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~55–65 Ah",
       "class_peers": [
@@ -832,9 +927,14 @@
         "high-electrical-load vehicles"
       ],
       "evidence": {
-        "source": "BCI group-size reference; H8/L5/88L5 cross-reference",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~80 Ah",
       "class_peers": [
@@ -873,9 +973,14 @@
         "SUVs"
       ],
       "evidence": {
-        "source": "BCI group-size reference; AutoZone / NAPA product specs",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "Medium"
+        "confidence": "Medium",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~65–75 Ah",
       "class_peers": [
@@ -924,9 +1029,14 @@
         "Off-grid 6V banks"
       ],
       "evidence": {
-        "source": "Manufacturer datasheets (Trojan, US Battery)",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~215 Ah (6V)",
       "class_peers": [],
@@ -952,9 +1062,14 @@
         "Floor machines"
       ],
       "evidence": {
-        "source": "Manufacturer datasheets (Trojan, US Battery)",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "capacity_class": "~150 Ah (12V)",
       "class_peers": [],
@@ -980,9 +1095,14 @@
         "Some imports"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "16–18",
       "capacity_class": "~55–65 Ah",
@@ -1037,9 +1157,14 @@
         "Marine starting"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "15–17",
       "capacity_class": "~45–55 Ah",
@@ -1085,9 +1210,14 @@
         "Japanese imports"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "16–18",
       "capacity_class": "~55–65 Ah",
@@ -1144,9 +1274,14 @@
         "Mid-size"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "18–20",
       "capacity_class": "~65–75 Ah",
@@ -1193,9 +1328,14 @@
         "Small Japanese cars"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "13–15",
       "capacity_class": "~45–55 Ah",
@@ -1242,9 +1382,14 @@
         "Some imports"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "15–17",
       "capacity_class": "~45–55 Ah",
@@ -1291,9 +1436,14 @@
         "GM side/post applications"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "15–17",
       "capacity_class": "~45–55 Ah",
@@ -1340,9 +1490,14 @@
         "SUVs"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "17–19",
       "capacity_class": "~55–65 Ah",
@@ -1398,9 +1553,14 @@
         "European cars"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "20–22",
       "capacity_class": "~80 Ah",
@@ -1438,9 +1598,14 @@
         "European compact"
       ],
       "evidence": {
-        "source": "BCI/SAE group reference tables + manufacturer datasheets",
+        "basis": "BCI group reference tables + manufacturer datasheets",
+        "sources": [
+          "BCI Battery Replacement Data Book (group dimensions)",
+          "Manufacturer datasheets (Varta, Bosch, Exide, East Penn)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "Typical values — specific builds vary by manufacturer within the group envelope."
       },
       "weight_kg": "14–16",
       "capacity_class": "~45–55 Ah",
@@ -1486,9 +1651,14 @@
         "Japanese cars"
       ],
       "evidence": {
-        "source": "JIS group reference tables + manufacturer datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "weight_kg": "16–18",
       "capacity_class": "~65–75 Ah",
@@ -1534,9 +1704,14 @@
         "Japanese mid-size"
       ],
       "evidence": {
-        "source": "JIS group reference tables + manufacturer datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "weight_kg": "17–19",
       "capacity_class": "~65–75 Ah",
@@ -1583,9 +1758,14 @@
         "4WD"
       ],
       "evidence": {
-        "source": "JIS group reference tables + manufacturer datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "weight_kg": "20–22",
       "capacity_class": "~80 Ah",
@@ -1624,9 +1804,14 @@
         "Vans"
       ],
       "evidence": {
-        "source": "JIS group reference tables + manufacturer datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "weight_kg": "23–25",
       "capacity_class": "~90–100 Ah",
@@ -1661,9 +1846,14 @@
         "Commercial"
       ],
       "evidence": {
-        "source": "JIS group reference tables + manufacturer datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "weight_kg": "24–26",
       "capacity_class": "~90–100 Ah",
@@ -1698,9 +1888,14 @@
         "Small Japanese cars"
       ],
       "evidence": {
-        "source": "JIS group reference tables + manufacturer datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "weight_kg": "12–14",
       "capacity_class": "~45–55 Ah",
@@ -1747,9 +1942,14 @@
         "Small cars"
       ],
       "evidence": {
-        "source": "JIS group reference tables + manufacturer datasheets",
+        "basis": "JIS D5301 group reference tables + manufacturer datasheets",
+        "sources": [
+          "JIS D5301 reference tables",
+          "Manufacturer datasheets (GS Yuasa, Panasonic, AtlasBX)"
+        ],
         "date": "2026-09",
-        "confidence": "High"
+        "confidence": "High",
+        "note": "JIS codes encode performance class and case size; typical values shown."
       },
       "weight_kg": "8–10",
       "capacity_class": "~28–30 Ah",

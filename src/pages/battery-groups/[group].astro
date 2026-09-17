@@ -150,9 +150,15 @@ const datasetJsonLd = {
       <h2>Sources &amp; verification</h2>
       <div class="evidence">
         <p><strong>CCA {battery.cca} A</strong> — {battery.cca_basis}</p>
-        <p class="muted">
-          Source: {battery.evidence.source} · Date: {battery.evidence.date} · Confidence: {battery.evidence.confidence}
-        </p>
+      </div>
+      <div class="evidence">
+        <p><strong>Evidence card</strong> — how this entity's data was established</p>
+        <p><strong>Basis:</strong> {battery.evidence.basis}</p>
+        <ul>
+          {battery.evidence.sources.map((s) => <li>{s}</li>)}
+        </ul>
+        <p class="muted">Confidence: {battery.evidence.confidence} · Last verified: {battery.evidence.date}</p>
+        <p class="muted">{battery.evidence.note}</p>
       </div>
       <p class="muted">Last verified: {battery.evidence.date}</p>
 
