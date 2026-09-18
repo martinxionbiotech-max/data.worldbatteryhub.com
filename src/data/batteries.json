@@ -63,7 +63,16 @@
           "group": "Group 34"
         }
       ],
-      "weight_kg": "14–16"
+      "weight_kg": "14–16",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "h5",
@@ -126,7 +135,16 @@
           "group": "Group 34"
         }
       ],
-      "weight_kg": "15–17"
+      "weight_kg": "15–17",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "h6",
@@ -182,7 +200,16 @@
           "group": "Group 48"
         }
       ],
-      "weight_kg": "18–20"
+      "weight_kg": "18–20",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "h7",
@@ -231,7 +258,16 @@
           "group": "Group 49"
         }
       ],
-      "weight_kg": "20–22"
+      "weight_kg": "20–22",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "h8",
@@ -275,7 +311,16 @@
           "group": "130D31"
         }
       ],
-      "weight_kg": "25–28"
+      "weight_kg": "25–28",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "h9",
@@ -315,7 +360,16 @@
           "group": "N100"
         }
       ],
-      "weight_kg": "28–32"
+      "weight_kg": "28–32",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "55d23",
@@ -376,7 +430,16 @@
           "group": "Group 34"
         }
       ],
-      "weight_kg": "14–16"
+      "weight_kg": "14–16",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "n150",
@@ -409,7 +472,16 @@
       },
       "capacity_class": "~135 Ah",
       "class_peers": [],
-      "weight_kg": "35–38"
+      "weight_kg": "35–38",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "n200",
@@ -442,7 +514,16 @@
       },
       "capacity_class": "~200+ Ah",
       "class_peers": [],
-      "weight_kg": "45–50"
+      "weight_kg": "45–50",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group31",
@@ -485,7 +566,16 @@
           "group": "N100"
         }
       ],
-      "weight_kg": "—"
+      "weight_kg": "—",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "typical",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group8d",
@@ -524,7 +614,16 @@
           "group": "N200"
         }
       ],
-      "weight_kg": "—"
+      "weight_kg": "—",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "typical",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group24",
@@ -575,7 +674,16 @@
           "group": "Group 65"
         }
       ],
-      "weight_kg": "—"
+      "weight_kg": "—",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "typical",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group27",
@@ -618,7 +726,16 @@
           "group": "Group 49"
         }
       ],
-      "weight_kg": "—"
+      "weight_kg": "—",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "typical",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group4d",
@@ -652,7 +769,16 @@
       },
       "capacity_class": "~160–180 Ah",
       "class_peers": [],
-      "weight_kg": "—"
+      "weight_kg": "—",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "typical",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "65d23",
@@ -713,7 +839,16 @@
           "group": "Group 34"
         }
       ],
-      "weight_kg": "15–17"
+      "weight_kg": "15–17",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "n70",
@@ -767,7 +902,16 @@
           "group": "Group 48"
         }
       ],
-      "weight_kg": "16–18"
+      "weight_kg": "16–18",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "n100",
@@ -805,7 +949,16 @@
           "group": "H9"
         }
       ],
-      "weight_kg": "25–28"
+      "weight_kg": "25–28",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "n120",
@@ -838,7 +991,16 @@
       },
       "capacity_class": "~120 Ah",
       "class_peers": [],
-      "weight_kg": "28–30"
+      "weight_kg": "28–30",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-34",
@@ -902,7 +1064,16 @@
           "group": "65D23"
         }
       ],
-      "weight_kg": "17–20"
+      "weight_kg": "17–20",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-49",
@@ -951,7 +1122,16 @@
           "group": "Group 94R"
         }
       ],
-      "weight_kg": "26–28"
+      "weight_kg": "26–28",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-65",
@@ -1005,7 +1185,16 @@
           "group": "Group 48"
         }
       ],
-      "weight_kg": "20–22"
+      "weight_kg": "20–22",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "gc2",
@@ -1040,7 +1229,16 @@
       },
       "capacity_class": "~215 Ah (6V)",
       "class_peers": [],
-      "weight_kg": "28–32"
+      "weight_kg": "28–32",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "gc12",
@@ -1073,7 +1271,16 @@
       },
       "capacity_class": "~150 Ah (12V)",
       "class_peers": [],
-      "weight_kg": "35–38"
+      "weight_kg": "35–38",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-25",
@@ -1135,7 +1342,16 @@
           "id": "group-34",
           "group": "Group 34"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-26",
@@ -1189,7 +1405,16 @@
           "id": "55b24",
           "group": "55B24"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-35",
@@ -1250,7 +1475,16 @@
           "id": "group-34",
           "group": "Group 34"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-48",
@@ -1306,7 +1540,16 @@
           "id": "group-65",
           "group": "Group 65"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-51",
@@ -1360,7 +1603,16 @@
           "id": "55b24",
           "group": "55B24"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-58",
@@ -1414,7 +1666,16 @@
           "id": "55b24",
           "group": "55B24"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-75-25",
@@ -1468,7 +1729,16 @@
           "id": "55b24",
           "group": "55B24"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-78",
@@ -1530,7 +1800,16 @@
           "id": "group-34",
           "group": "Group 34"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-94r",
@@ -1577,7 +1856,16 @@
           "id": "group-49",
           "group": "Group 49"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-96r",
@@ -1630,7 +1918,16 @@
           "id": "55b24",
           "group": "55B24"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "75d23",
@@ -1683,7 +1980,16 @@
           "id": "group-48",
           "group": "Group 48"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "80d26",
@@ -1736,7 +2042,16 @@
           "id": "group-48",
           "group": "Group 48"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "95d31",
@@ -1782,7 +2097,16 @@
           "id": "group-49",
           "group": "Group 49"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "115d31",
@@ -1824,7 +2148,16 @@
           "id": "130d31",
           "group": "130D31"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "130d31",
@@ -1866,7 +2199,16 @@
           "id": "115d31",
           "group": "115D31"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "55b24",
@@ -1920,7 +2262,16 @@
           "id": "group-96r",
           "group": "Group 96R"
         }
-      ]
+      ],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "typical",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "40b19",
@@ -1953,7 +2304,16 @@
       },
       "weight_kg": "8–10",
       "capacity_class": "~28–30 Ah",
-      "class_peers": []
+      "class_peers": [],
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "h3",
@@ -2004,7 +2364,16 @@
           "group": "55B24"
         }
       ],
-      "weight_kg": "10–12"
+      "weight_kg": "10–12",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "22f",
@@ -2054,7 +2423,16 @@
           "group": "Group 26"
         }
       ],
-      "weight_kg": "15–17"
+      "weight_kg": "15–17",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-63",
@@ -2104,7 +2482,16 @@
           "group": "Group 25"
         }
       ],
-      "weight_kg": "13–15"
+      "weight_kg": "13–15",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-86",
@@ -2155,7 +2542,16 @@
           "group": "Group 22F"
         }
       ],
-      "weight_kg": "15–17"
+      "weight_kg": "15–17",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-27f",
@@ -2206,7 +2602,16 @@
           "group": "N100"
         }
       ],
-      "weight_kg": "21–23"
+      "weight_kg": "21–23",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "t5",
@@ -2258,7 +2663,16 @@
           "group": "Group 48"
         }
       ],
-      "weight_kg": "14–16"
+      "weight_kg": "14–16",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "t6",
@@ -2310,7 +2724,16 @@
           "group": "N70"
         }
       ],
-      "weight_kg": "16–18"
+      "weight_kg": "16–18",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "60b19",
@@ -2361,7 +2784,16 @@
           "group": "Group 51"
         }
       ],
-      "weight_kg": "10–12"
+      "weight_kg": "10–12",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "65b24",
@@ -2412,7 +2844,16 @@
           "group": "Group 22F"
         }
       ],
-      "weight_kg": "13–15"
+      "weight_kg": "13–15",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "85d23",
@@ -2462,7 +2903,16 @@
           "group": "H6"
         }
       ],
-      "weight_kg": "16–18"
+      "weight_kg": "16–18",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "100d26",
@@ -2512,7 +2962,16 @@
           "group": "Group 65"
         }
       ],
-      "weight_kg": "18–20"
+      "weight_kg": "18–20",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "105d31",
@@ -2563,7 +3022,16 @@
           "group": "H8"
         }
       ],
-      "weight_kg": "21–23"
+      "weight_kg": "21–23",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "110d31",
@@ -2614,7 +3082,16 @@
           "group": "H8"
         }
       ],
-      "weight_kg": "22–24"
+      "weight_kg": "22–24",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "gc8",
@@ -2658,7 +3135,16 @@
           "group": "GC12"
         }
       ],
-      "weight_kg": "29–31"
+      "weight_kg": "29–31",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "typical",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-34r",
@@ -2710,7 +3196,16 @@
           "group": "H5"
         }
       ],
-      "weight_kg": "17–20"
+      "weight_kg": "17–20",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     },
     {
       "id": "group-51r",
@@ -2762,7 +3257,16 @@
           "group": "Group 22F"
         }
       ],
-      "weight_kg": "13–15"
+      "weight_kg": "13–15",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
     }
   ]
 }

@@ -98,14 +98,19 @@ const datasetJsonLd = {
       <h2>Specification</h2>
       <table>
         <tbody>
-          <tr><th>Voltage</th><td>{battery.voltage}V</td></tr>
-          <tr><th>Typical capacity</th><td>{battery.capacity_ah} Ah</td></tr>
-          <tr><th>Typical CCA</th><td>{battery.cca} A</td></tr>
-          <tr><th>Dimensions (L×W×H)</th><td>{battery.dimensions_mm} mm</td></tr>
-          <tr><th>Terminal</th><td>{battery.terminal}</td></tr>
-          <tr><th>Typical weight</th><td>{battery.weight_kg} kg</td></tr>
+          <tr><th>Voltage</th><td>{battery.voltage}V</td><td class="muted">{battery.value_type.voltage.replace('_', ' ')}</td></tr>
+          <tr><th>Typical capacity</th><td>{battery.capacity_ah} Ah</td><td class="muted">{battery.value_type.capacity_ah.replace('_', ' ')}</td></tr>
+          <tr><th>Typical CCA</th><td>{battery.cca} A</td><td class="muted">{battery.value_type.cca.replace('_', ' ')}</td></tr>
+          <tr><th>Dimensions (L×W×H)</th><td>{battery.dimensions_mm} mm</td><td class="muted">{battery.value_type.dimensions_mm.replace('_', ' ')}</td></tr>
+          <tr><th>Terminal</th><td>{battery.terminal}</td><td class="muted">{battery.value_type.terminal.replace('_', ' ')}</td></tr>
+          <tr><th>Typical weight</th><td>{battery.weight_kg} kg</td><td class="muted">{battery.value_type.weight_kg.replace('_', ' ')}</td></tr>
         </tbody>
       </table>
+      <p class="muted">
+        Value types — <strong>standard-defined</strong>: fixed by the group standard (voltage, dimensions, terminal);
+        <strong>range</strong>: a span across the group; <strong>typical</strong>: a single representative value.
+        None is a substitute for a specific battery's datasheet.
+      </p>
 
       <h2>Standards &amp; measurement context</h2>
       <table>
