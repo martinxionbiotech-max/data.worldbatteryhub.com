@@ -6,6 +6,7 @@ const items = batteries.batteries;
 
 const datasetJsonLd = {
   '@type': 'Dataset',
+  license: 'https://creativecommons.org/licenses/by/4.0/',
   '@id': `${SITE}/#battery-groups`,
   name: 'Battery Group Reference Data',
   description: 'Entity database of battery groups — H4-H9, JIS N-series and BCI groups, each with voltage, capacity, CCA (with its standard), dimensions and terminal.',
@@ -84,5 +85,6 @@ const datasetJsonLd = {
       <p class="muted">Source: cross-verified from manufacturer datasheets (Varta, Bosch, Yuasa, Century, Exide, Dingwei/Chengguang) and BCI group-size reference. Last verified: 2026-09-15.</p>
       <p class="muted">Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.</p>
     </div>
+  <p class="muted">Dataset license: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — free to share and adapt with attribution.</p>
   </body>
 </html>

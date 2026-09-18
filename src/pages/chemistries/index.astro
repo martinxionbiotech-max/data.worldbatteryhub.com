@@ -6,6 +6,7 @@ const items = chemistries.chemistries;
 
 const datasetJsonLd = {
   '@type': 'Dataset',
+  license: 'https://creativecommons.org/licenses/by/4.0/',
   '@id': `${SITE}/#chemistries`,
   name: 'Lithium Cell Chemistry Reference Data',
   description: 'Reference data for lithium cell chemistries — LFP, NMC, NCA, LTO and LMFP, each with nominal voltage, cell-level energy density, cycle life and temperature window as typical ranges with sources.',
@@ -93,5 +94,6 @@ const datasetJsonLd = {
       <p class="muted">Source: cross-verified from cell-manufacturer datasheets and battery engineering references. Last verified: 2026-09-18.</p>
       <p class="muted">Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.</p>
     </div>
+  <p class="muted">Dataset license: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — free to share and adapt with attribution.</p>
   </body>
 </html>

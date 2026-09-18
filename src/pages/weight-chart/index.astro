@@ -10,6 +10,7 @@ const sorted = [...batteries.batteries].sort((a, b) => {
 
 const datasetJsonLd = {
   '@type': 'Dataset',
+  license: 'https://creativecommons.org/licenses/by/4.0/',
   '@id': 'https://data.worldbatteryhub.com/weight-chart/#dataset',
   name: 'Battery group weight reference',
   description: 'Typical battery weights by group — 40 BCI, EN/DIN and JIS groups compiled from reference tables and manufacturer datasheets.',
@@ -88,5 +89,6 @@ const datasetJsonLd = {
         battery's datasheet. Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.
       </p>
     </div>
+  <p class="muted">Dataset license: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — free to share and adapt with attribution.</p>
   </body>
 </html>
