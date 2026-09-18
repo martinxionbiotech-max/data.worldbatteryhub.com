@@ -1,0 +1,120 @@
+{
+  "generated": "2026-09-18",
+  "note": "Lithium cell chemistry reference data (P1 §5). Each chemistry is a Chemistry entity with nominal voltage, cell-level energy density, cycle life and temperature window — all expressed as typical ranges with a source annotation, per the site's no-number-without-evidence rule. Values vary by manufacturer, cell format and C-rate; they are not a substitute for a specific cell datasheet. LFP/NMC/NCA/LTO figures are cross-verified against the main-site lithium knowledge base and cell-manufacturer datasheets; LMFP is an emerging chemistry with a wider vendor spread (lower confidence).",
+  "chemistries": [
+    {
+      "id": "lfp",
+      "name": "LFP",
+      "full_name": "Lithium iron phosphate (LiFePO₄)",
+      "entityType": "Chemistry",
+      "nominal_voltage_v": "3.2",
+      "voltage_window_v": "2.5–3.65",
+      "energy_density_wh_kg": "90–160",
+      "energy_density_basis": "cell level",
+      "cycle_life": "2,000–5,000+",
+      "cycle_life_basis": "cycles to 80% capacity, ~80% DOD, 25 °C",
+      "temperature_window": "discharge −20 to +60 °C · charge 0 to +45 °C",
+      "thermal_stability": "Highest of the group (most abuse-tolerant)",
+      "cobalt_content": "None",
+      "typical_cell_format": "Prismatic / cylindrical",
+      "sources": [
+        "Cell-manufacturer datasheets (CATL, BYD, EVE, Gotion)",
+        "IEC 62660 (EV cell test conditions)",
+        "Battery engineering references"
+      ],
+      "evidence_note": "Typical ranges; vary by manufacturer, cell format and C-rate. Energy density is cell-level — pack level is lower.",
+      "last_verified": "2026-09-18"
+    },
+    {
+      "id": "nmc",
+      "name": "NMC",
+      "full_name": "Lithium nickel manganese cobalt oxide",
+      "entityType": "Chemistry",
+      "nominal_voltage_v": "3.6–3.7",
+      "voltage_window_v": "2.7–4.2",
+      "energy_density_wh_kg": "150–220",
+      "energy_density_basis": "cell level",
+      "cycle_life": "1,000–2,000",
+      "cycle_life_basis": "cycles to 80% capacity, ~80% DOD, 25 °C",
+      "temperature_window": "discharge −20 to +55 °C · charge 0 to +45 °C",
+      "thermal_stability": "Moderate (needs active thermal management)",
+      "cobalt_content": "~9–33% (blend-dependent, falling)",
+      "typical_cell_format": "Pouch / prismatic",
+      "sources": [
+        "Cell-manufacturer datasheets (LG Energy Solution, Samsung SDI, CATL, Panasonic)",
+        "IEC 62660 (EV cell test conditions)",
+        "Battery engineering references"
+      ],
+      "evidence_note": "Typical ranges; the exact nickel/manganese/cobalt ratio (e.g. NMC 811 vs 111) moves both energy density and cycle life.",
+      "last_verified": "2026-09-18"
+    },
+    {
+      "id": "nca",
+      "name": "NCA",
+      "full_name": "Lithium nickel cobalt aluminium oxide",
+      "entityType": "Chemistry",
+      "nominal_voltage_v": "3.6",
+      "voltage_window_v": "2.7–4.2",
+      "energy_density_wh_kg": "200–260",
+      "energy_density_basis": "cell level",
+      "cycle_life": "500–1,500",
+      "cycle_life_basis": "cycles to 80% capacity, ~80% DOD, 25 °C",
+      "temperature_window": "discharge −20 to +55 °C · charge 0 to +45 °C",
+      "thermal_stability": "Lower than LFP (needs management)",
+      "cobalt_content": "~10–15% (falling)",
+      "typical_cell_format": "Cylindrical",
+      "sources": [
+        "Cell-manufacturer datasheets (Panasonic, Samsung SDI)",
+        "IEC 62660 (EV cell test conditions)",
+        "Battery engineering references"
+      ],
+      "evidence_note": "Typical ranges; NCA is concentrated in cylindrical cells and holds a small energy-density edge over NMC.",
+      "last_verified": "2026-09-18"
+    },
+    {
+      "id": "lto",
+      "name": "LTO",
+      "full_name": "Lithium titanate (Li₄Ti₅O₁₂)",
+      "entityType": "Chemistry",
+      "nominal_voltage_v": "2.3–2.4",
+      "voltage_window_v": "1.5–2.85",
+      "energy_density_wh_kg": "50–80",
+      "energy_density_basis": "cell level",
+      "cycle_life": "10,000–20,000",
+      "cycle_life_basis": "cycles to 80% capacity, high DOD, 25 °C",
+      "temperature_window": "discharge −30 to +55 °C · charge −30 to +55 °C",
+      "thermal_stability": "Very high (no metallic lithium plating; wide low-temp charge window)",
+      "cobalt_content": "None",
+      "typical_cell_format": "Prismatic / pouch / cylindrical",
+      "sources": [
+        "Cell-manufacturer datasheets (Toshiba SCiB, Altairnano lineage)",
+        "IEC 62660 (EV cell test conditions)",
+        "Battery engineering references"
+      ],
+      "evidence_note": "Lowest energy density and voltage of the group, but the longest cycle life and the widest charge-temperature window. Values are typical ranges.",
+      "last_verified": "2026-09-18"
+    },
+    {
+      "id": "lmfp",
+      "name": "LMFP",
+      "full_name": "Lithium manganese iron phosphate",
+      "entityType": "Chemistry",
+      "nominal_voltage_v": "3.5–3.6",
+      "voltage_window_v": "2.5–4.2",
+      "energy_density_wh_kg": "150–200",
+      "energy_density_basis": "cell level (vendor-dependent)",
+      "cycle_life": "2,000–4,000",
+      "cycle_life_basis": "cycles to 80% capacity, ~80% DOD, 25 °C",
+      "temperature_window": "discharge −20 to +55 °C · charge 0 to +45 °C",
+      "thermal_stability": "High (LFP-family; manganese raises voltage)",
+      "cobalt_content": "None",
+      "typical_cell_format": "Prismatic / pouch",
+      "sources": [
+        "Cell-manufacturer datasheets (Gotion, CATL — early LMFP lines)",
+        "Battery engineering references"
+      ],
+      "evidence_note": "Emerging chemistry with a wider vendor spread — treat energy-density and cycle-life figures as indicative rather than settled. Higher manganese content raises nominal voltage and energy density versus LFP.",
+      "last_verified": "2026-09-18"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+---
+import chemistries from '../../data/chemistries.json';
+
+const SITE = 'https://data.worldbatteryhub.com';
+const items = chemistries.chemistries;
+
+const datasetJsonLd = {
+  '@type': 'Dataset',
+  '@id': `${SITE}/#chemistries`,
+  name: 'Lithium Cell Chemistry Reference Data',
+  description: 'Reference data for lithium cell chemistries — LFP, NMC, NCA, LTO and LMFP, each with nominal voltage, cell-level energy density, cycle life and temperature window as typical ranges with sources.',
+  url: `${SITE}/chemistries/`,
+  variableMeasured: ['Nominal voltage', 'Energy density', 'Cycle life', 'Temperature window', 'Thermal stability'],
+  dateModified: '2026-09-18',
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lithium Cell Chemistries — LFP, NMC, NCA, LTO, LMFP | World Battery Hub</title>
+    <meta name="description" content="Lithium cell chemistry reference — LFP, NMC, NCA, LTO and LMFP with nominal voltage, cell-level energy density, cycle life and temperature window, all as typical ranges with sources." />
+    <link rel="canonical" href={`${SITE}/chemistries/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+      th, td { text-align: left; padding: 8px 9px; border-bottom: 1px solid #e5e9f0; vertical-align: top; }
+      th { color: #0f1f3d; }
+    </style>
+    <script type="application/ld+json" set:html={JSON.stringify(datasetJsonLd)} />
+  
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"@id\": \"https://data.worldbatteryhub.com/chemistries/\", \"url\": \"https://data.worldbatteryhub.com/chemistries/\", \"name\": \"Lithium Cell Chemistries\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}, \"isPartOf\": {\"@id\": \"https://data.worldbatteryhub.com/\"}}"} />
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Battery Data\", \"item\": \"https://data.worldbatteryhub.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Chemistries\", \"item\": \"https://data.worldbatteryhub.com/chemistries/\"}]}"} />
+  </head>
+  <body>
+    <div class="container">
+      <p class="muted"><a href="/">← Battery Data</a> · Entity: <strong>Chemistry</strong></p>
+      <h1>Lithium Cell Chemistries</h1>
+      <p>Reference data for the five main lithium cell chemistries — click a chemistry for its full entity page. Values are typical ranges with a source annotation, not a substitute for a specific cell datasheet.</p>
+
+      <div class="box">
+        <strong>At a glance:</strong> The five chemistries span a deliberate trade-off: <strong>LFP</strong> is the
+        safety/longevity default, <strong>NMC</strong> and <strong>NCA</strong> chase energy density, <strong>LTO</strong>
+        trades energy for extreme cycle life and low-temperature charging, and <strong>LMFP</strong> lifts LFP's voltage
+        for more energy without cobalt.
+      </div>
+
+      <h2>Directory</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Chemistry</th>
+            <th>Full name</th>
+            <th>Nominal voltage</th>
+            <th>Energy density (cell)</th>
+            <th>Cycle life</th>
+            <th>Temperature window</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map((c) => (
+            <tr>
+              <td><a href={`/chemistries/${c.id}/`}><strong>{c.name}</strong></a></td>
+              <td>{c.full_name}</td>
+              <td>{c.nominal_voltage_v} V</td>
+              <td>{c.energy_density_wh_kg} Wh/kg</td>
+              <td>{c.cycle_life}</td>
+              <td>{c.temperature_window}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="muted">
+        Energy density is cell-level (pack level is lower); cycle life is to 80% capacity at ~25°C and high depth of
+        discharge. Figures are typical ranges — treat them as relative, not absolute.
+      </p>
+
+      <h2>Related references</h2>
+      <ul>
+        <li><a href="https://worldbatteryhub.com/lithium/lfp-vs-nmc-vs-lto/">LFP vs NMC vs LTO (main knowledge base)</a></li>
+        <li><a href="https://worldbatteryhub.com/lithium/energy-density/">How energy density works</a></li>
+        <li><a href="https://worldbatteryhub.com/lithium/lifespan/">Battery cycle life</a></li>
+        <li><a href="/battery-groups/">Lead-acid battery groups</a></li>
+      </ul>
+
+      <p class="muted">Source: cross-verified from cell-manufacturer datasheets and battery engineering references. Last verified: 2026-09-18.</p>
+      <p class="muted">Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+---
+import chemistries from '../../data/chemistries.json';
+
+export function getStaticPaths() {
+  return chemistries.chemistries.map((c) => ({
+    params: { chemistry: c.id },
+    props: { chemistry: c },
+  }));
+}
+
+const { chemistry } = Astro.props;
+const SITE = 'https://data.worldbatteryhub.com';
+const url = `${SITE}/chemistries/${chemistry.id}/`;
+
+const definedTermJsonLd = {
+  '@type': 'DefinedTerm',
+  '@id': `${url}#term`,
+  name: `${chemistry.name} battery chemistry`,
+  termCode: chemistry.name,
+  inDefinedTermSet: { '@id': `${SITE}/#chemistries` },
+  description: `${chemistry.name} (${chemistry.full_name}) — nominal voltage ${chemistry.nominal_voltage_v} V, cell-level energy density ${chemistry.energy_density_wh_kg} Wh/kg, cycle life ${chemistry.cycle_life} cycles, temperature window ${chemistry.temperature_window}.`,
+};
+
+const datasetJsonLd = {
+  '@type': 'Dataset',
+  name: `${chemistry.name} lithium cell chemistry reference`,
+  description: `Reference data for the ${chemistry.name} lithium cell chemistry.`,
+  url,
+  about: { '@id': `${url}#term` },
+  variableMeasured: ['nominal voltage', 'energy density', 'cycle life', 'temperature window'],
+  dateModified: '2026-09-18',
+  creator: { '@id': `${SITE}/#publisher` },
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{chemistry.name} Battery Chemistry — Voltage, Energy Density, Cycle Life | World Battery Hub</title>
+    <meta name="description" content={`${chemistry.name} (${chemistry.full_name}) — nominal voltage ${chemistry.nominal_voltage_v} V, cell-level energy density ${chemistry.energy_density_wh_kg} Wh/kg, ${chemistry.cycle_life} cycles, ${chemistry.temperature_window}.`} />
+    <link rel="canonical" href={url} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      .evidence { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 40%; }
+      .related { display: flex; flex-wrap: wrap; gap: 8px; }
+      .related a { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 4px; padding: 4px 10px; text-decoration: none; font-size: 0.9rem; }
+    </style>
+    <script type="application/ld+json" set:html={JSON.stringify(definedTermJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(datasetJsonLd)} />
+  
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"@id\": \"https://data.worldbatteryhub.com/chemistries/\", \"url\": \"https://data.worldbatteryhub.com/chemistries/\", \"name\": \"Chemistries\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}, \"isPartOf\": {\"@id\": \"https://data.worldbatteryhub.com/\"}}"} />
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Battery Data\", \"item\": \"https://data.worldbatteryhub.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Chemistries\", \"item\": \"https://data.worldbatteryhub.com/chemistries/\"}]}"} />
+  </head>
+  <body>
+    <div class="container">
+      <p class="muted"><a href="/chemistries/">← Chemistries</a> · Entity: <strong>Chemistry</strong></p>
+      <h1>{chemistry.name} Battery Chemistry</h1>
+      <p class="muted">{chemistry.full_name}</p>
+
+      <div class="box">
+        <strong>At a glance:</strong> {chemistry.name} is <strong>{chemistry.full_name}</strong> — a lithium cell
+        chemistry with a nominal voltage of <strong>{chemistry.nominal_voltage_v} V</strong>, cell-level energy
+        density around <strong>{chemistry.energy_density_wh_kg} Wh/kg</strong>, typical cycle life of
+        <strong>{chemistry.cycle_life} cycles</strong>, and a temperature window of
+        <strong>{chemistry.temperature_window}</strong>.
+      </div>
+
+      <h2>Specification</h2>
+      <table>
+        <tbody>
+          <tr><th>Entity type</th><td>{chemistry.entityType}</td></tr>
+          <tr><th>Nominal voltage</th><td>{chemistry.nominal_voltage_v} V</td></tr>
+          <tr><th>Operating voltage window</th><td>{chemistry.voltage_window_v} V</td></tr>
+          <tr><th>Energy density</th><td>{chemistry.energy_density_wh_kg} Wh/kg ({chemistry.energy_density_basis})</td></tr>
+          <tr><th>Cycle life</th><td>{chemistry.cycle_life} cycles ({chemistry.cycle_life_basis})</td></tr>
+          <tr><th>Temperature window</th><td>{chemistry.temperature_window}</td></tr>
+          <tr><th>Thermal stability</th><td>{chemistry.thermal_stability}</td></tr>
+          <tr><th>Cobalt content</th><td>{chemistry.cobalt_content}</td></tr>
+          <tr><th>Typical cell format</th><td>{chemistry.typical_cell_format}</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        All figures are typical ranges, not a substitute for a specific cell datasheet — they vary by manufacturer,
+        cell format and C-rate.
+      </p>
+
+      <h2>Engineering interpretation</h2>
+      <div class="box">
+        <p>
+          <strong>What the data means:</strong> {chemistry.name}&rsquo;s position in the chemistry family is set by
+          two numbers working against each other — energy density (Wh/kg) and cycle life. {chemistry.name} sits at
+          roughly <strong>{chemistry.energy_density_wh_kg} Wh/kg</strong> and
+          <strong>{chemistry.cycle_life} cycles</strong>, which places it at a specific point on the
+          energy-versus-longevity trade-off.
+        </p>
+        <p>
+          <strong>Why it matters:</strong> A datasheet number only means something with its basis — cell-level
+          energy density is not pack-level, and cycle life is only meaningful at a stated depth of discharge and
+          temperature. Read {chemistry.name} against those conditions, never as a bare figure.
+        </p>
+        <p class="muted"><em>Engineering interpretation, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources &amp; verification</h2>
+      <div class="evidence">
+        <p><strong>Evidence card</strong> — how this chemistry&rsquo;s data was established</p>
+        <p><strong>Basis:</strong> typical ranges cross-verified from cell-manufacturer datasheets and battery engineering references.</p>
+        <ul>
+          {chemistry.sources.map((s) => <li>{s}</li>)}
+        </ul>
+        <p class="muted">{chemistry.evidence_note}</p>
+        <p class="muted">Last verified: {chemistry.last_verified}</p>
+      </div>
+
+      <h2>Related</h2>
+      <div class="related">
+        <a href="/chemistries/">All chemistries</a>
+        <a href="https://worldbatteryhub.com/lithium/lfp-vs-nmc-vs-lto/">LFP vs NMC vs LTO</a>
+        <a href="https://worldbatteryhub.com/lithium/energy-density/">Energy density</a>
+        <a href="https://worldbatteryhub.com/lithium/lifespan/">Cycle life</a>
+        <a href="https://testing.worldbatteryhub.com/standards/iec-62660/">IEC 62660</a>
+      </div>
+
+      <p class="muted">Values are typical ranges, not a substitute for a specific cell datasheet. Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.</p>
+    </div>
+  </body>
+</html>
