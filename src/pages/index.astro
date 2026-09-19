@@ -12,6 +12,10 @@ const datasetJsonLd = {
   description: 'Entity database of battery groups — H4-H9, JIS N-series and BCI groups, each with voltage, capacity, CCA (with its standard), dimensions and terminal.',
   url: `${SITE}/`,
   variableMeasured: ['Battery group', 'Voltage', 'Capacity', 'CCA', 'CCA standard', 'Dimensions', 'Terminal'],
+  distribution: [
+    { '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': 'https://data.worldbatteryhub.com/battery-groups.json' },
+    { '@type': 'DataDownload', 'encodingFormat': 'text/csv', 'contentUrl': 'https://data.worldbatteryhub.com/battery-groups.csv' },
+  ],
   dateModified: '2026-09-15',
 };
 ---
@@ -74,6 +78,14 @@ const datasetJsonLd = {
           ))}
         </tbody>
       </table>
+
+      <h2 style="color:#0f1f3d;">Download the dataset</h2>
+      <p>Machine-readable exports of this reference data, free to use under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> with attribution:</p>
+      <ul>
+        <li><a href="/battery-groups.json">battery-groups.json</a> — full entity database (56 groups)</li>
+        <li><a href="/battery-groups.csv">battery-groups.csv</a> — flat table for spreadsheets</li>
+        <li><a href="/chemistries.json">chemistries.json</a> — lithium cell chemistry reference (5 chemistries)</li>
+      </ul>
 
       <h2 style="color:#0f1f3d;">Related references</h2>
       <ul>
