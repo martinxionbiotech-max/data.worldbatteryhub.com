@@ -12,9 +12,22 @@ const { battery } = Astro.props;
 const SITE = 'https://data.worldbatteryhub.com';
 const url = `${SITE}/battery-groups/${battery.id}/`;
 
+// Unified Entity ID scheme (audit §36): WBH-BAT-GROUP-<CODE>
+const entityId = `WBH-BAT-GROUP-${battery.id.toUpperCase().replace(/^GROUP-/, '')}`;
+
+// Three-label value-type system (audit §9):
+//   Standard-defined | Manufacturer-reported | World Battery Hub derived
+const VALUE_TYPE_LABELS = {
+  standard_defined: 'Standard-defined',
+  range: 'World Battery Hub derived — cross-source range',
+  typical: 'Manufacturer-reported — representative value',
+};
+const vtLabel = (k) => VALUE_TYPE_LABELS[battery.value_type?.[k]] || battery.value_type?.[k]?.replace('_', ' ');
+
 const definedTermJsonLd = {
   '@type': 'DefinedTerm',
   '@id': `${url}#term`,
+  identifier: entityId,
   name: `${battery.group} battery`,
   termCode: battery.group,
   inDefinedTermSet: { '@id': `${SITE}/#battery-groups` },
@@ -90,6 +103,7 @@ const datasetJsonLd = {
       <table>
         <tbody>
           <tr><th>Entity type</th><td>{battery.entityType}</td></tr>
+          <tr><th>Entity ID</th><td><code>{entityId}</code></td></tr>
           <tr><th>Group name</th><td>{battery.group}</td></tr>
           <tr><th>Aliases</th><td>{battery.aliases.join(' / ')}</td></tr>
           <tr><th>Standard family</th><td>{battery.standard}</td></tr>
@@ -99,18 +113,19 @@ const datasetJsonLd = {
       <h2>Specification</h2>
       <table>
         <tbody>
-          <tr><th>Voltage</th><td>{battery.voltage}V</td><td class="muted">{battery.value_type.voltage.replace('_', ' ')}</td></tr>
-          <tr><th>Typical capacity</th><td>{battery.capacity_ah} Ah</td><td class="muted">{battery.value_type.capacity_ah.replace('_', ' ')}</td></tr>
-          <tr><th>Typical CCA</th><td>{battery.cca} A</td><td class="muted">{battery.value_type.cca.replace('_', ' ')}</td></tr>
-          <tr><th>Dimensions (L×W×H)</th><td>{battery.dimensions_mm} mm</td><td class="muted">{battery.value_type.dimensions_mm.replace('_', ' ')}</td></tr>
-          <tr><th>Terminal</th><td>{battery.terminal}</td><td class="muted">{battery.value_type.terminal.replace('_', ' ')}</td></tr>
-          <tr><th>Typical weight</th><td>{battery.weight_kg} kg</td><td class="muted">{battery.value_type.weight_kg.replace('_', ' ')}</td></tr>
+          <tr><th>Voltage</th><td>{battery.voltage}V</td><td class="muted">{vtLabel('voltage')}</td></tr>
+          <tr><th>Typical capacity</th><td>{battery.capacity_ah} Ah</td><td class="muted">{vtLabel('capacity_ah')}</td></tr>
+          <tr><th>Typical CCA</th><td>{battery.cca} A</td><td class="muted">{vtLabel('cca')}</td></tr>
+          <tr><th>Dimensions (L×W×H)</th><td>{battery.dimensions_mm} mm</td><td class="muted">{vtLabel('dimensions_mm')}</td></tr>
+          <tr><th>Terminal</th><td>{battery.terminal}</td><td class="muted">{vtLabel('terminal')}</td></tr>
+          <tr><th>Typical weight</th><td>{battery.weight_kg} kg</td><td class="muted">{vtLabel('weight_kg')}</td></tr>
         </tbody>
       </table>
       <p class="muted">
-        Value types — <strong>standard-defined</strong>: fixed by the group standard (voltage, dimensions, terminal);
-        <strong>range</strong>: a span across the group; <strong>typical</strong>: a single representative value.
-        None is a substitute for a specific battery's datasheet.
+        Value types — <strong>Standard-defined</strong>: fixed by the group standard (voltage, dimensions, terminal);
+        <strong>Manufacturer-reported</strong>: a representative value from manufacturer datasheets;
+        <strong>World Battery Hub derived</strong>: a cross-source range aggregated by World Battery Hub from
+        manufacturer datasheets. None is a substitute for a specific battery's datasheet.
       </p>
 
       <h2>Standards &amp; measurement context</h2>
