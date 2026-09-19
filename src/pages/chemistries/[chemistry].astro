@@ -12,9 +12,12 @@ const { chemistry } = Astro.props;
 const SITE = 'https://data.worldbatteryhub.com';
 const url = `${SITE}/chemistries/${chemistry.id}/`;
 
+const entityId = `WBH-CHEM-${chemistry.id.toUpperCase()}`;
+
 const definedTermJsonLd = {
   '@type': 'DefinedTerm',
   '@id': `${url}#term`,
+  identifier: entityId,
   name: `${chemistry.name} battery chemistry`,
   termCode: chemistry.name,
   inDefinedTermSet: { '@id': `${SITE}/#chemistries` },
@@ -84,6 +87,7 @@ const datasetJsonLd = {
       <table>
         <tbody>
           <tr><th>Entity type</th><td>{chemistry.entityType}</td></tr>
+          <tr><th>Entity ID</th><td><code>{entityId}</code></td></tr>
           <tr><th>Nominal voltage</th><td>{chemistry.nominal_voltage_v} V</td></tr>
           <tr><th>Operating voltage window</th><td>{chemistry.voltage_window_v} V</td></tr>
           <tr><th>Energy density</th><td>{chemistry.energy_density_wh_kg} Wh/kg ({chemistry.energy_density_basis})</td></tr>
