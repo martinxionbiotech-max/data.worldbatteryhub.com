@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && LLMS_MODE=h1 LLMS_BASE=https://data.worldbatteryhub.com LLMS_TITLE='World Battery Hub — Battery Reference Data' LLMS_DESC='Entity database of battery group sizes: EN/DIN, JIS, BCI/SAE groups with voltage, capacity, CCA, CCA basis and technology. Cross-verified ranges with explicit evidence labels; not a substitute for a specific battery datasheet.' node scripts/build-llms.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
