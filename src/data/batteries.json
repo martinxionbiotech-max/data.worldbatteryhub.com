@@ -2304,7 +2304,24 @@
       },
       "weight_kg": "8–10",
       "capacity_class": "~28–30 Ah",
-      "class_peers": [],
+      "class_peers": [
+        {
+          "id": "60b19",
+          "group": "60B19"
+        },
+        {
+          "id": "65b24",
+          "group": "65B24"
+        },
+        {
+          "id": "55b24",
+          "group": "55B24"
+        },
+        {
+          "id": "55d23",
+          "group": "55D23"
+        }
+      ],
       "value_type": {
         "voltage": "standard_defined",
         "capacity_ah": "range",
