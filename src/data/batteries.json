@@ -855,7 +855,8 @@
       "group": "N70",
       "entityType": "BatteryGroup",
       "aliases": [
-        "65G24"
+        "65G24",
+        "65D31"
       ],
       "standard": "JIS",
       "voltage": 12,
@@ -877,7 +878,7 @@
         ],
         "date": "2026-09",
         "confidence": "High",
-        "note": "JIS codes encode performance class and case size; typical values shown."
+        "note": "Old-JIS N-series: new-JIS mapping varies by manufacturer (65G24 per AtlasBX-class datasheets, 65D31 per Sebang). Typical values shown."
       },
       "capacity_class": "~65–75 Ah",
       "class_peers": [
@@ -3275,6 +3276,65 @@
         }
       ],
       "weight_kg": "13–15",
+      "value_type": {
+        "voltage": "standard_defined",
+        "capacity_ah": "range",
+        "cca": "range",
+        "dimensions_mm": "standard_defined",
+        "weight_kg": "range",
+        "terminal": "standard_defined",
+        "cca_basis": "standard_defined"
+      }
+    },
+    {
+      "id": "n50",
+      "group": "N50",
+      "entityType": "BatteryGroup",
+      "aliases": [
+        "48D26",
+        "55D26"
+      ],
+      "standard": "JIS",
+      "voltage": 12,
+      "capacity_ah": "50–60",
+      "cca": "420–500",
+      "cca_basis": "JIS D5301 (−15°C)",
+      "dimensions_mm": "260 × 173 × 222",
+      "terminal": "JIS type A",
+      "technology": "Flooded MF",
+      "applications": [
+        "Passenger cars"
+      ],
+      "evidence": {
+        "basis": "Manufacturer JIS conversion tables (Sebang official JIS chart: SMF N50 → 48D26, SMF N50Z → 55D26)",
+        "sources": [
+          "Sebang Battery JIS reference table",
+          "JIS D5301 group reference"
+        ],
+        "date": "2026-10",
+        "confidence": "Medium",
+        "note": "Old-JIS N-series designation; new-JIS mapping varies by manufacturer (48D26/55D26). Typical values shown."
+      },
+      "capacity_class": "~50–60 Ah",
+      "class_peers": [
+        {
+          "id": "n70",
+          "group": "N70"
+        },
+        {
+          "id": "80d26",
+          "group": "80D26"
+        },
+        {
+          "id": "55d23",
+          "group": "55D23"
+        },
+        {
+          "id": "75d23",
+          "group": "75D23"
+        }
+      ],
+      "weight_kg": "14–16",
       "value_type": {
         "voltage": "standard_defined",
         "capacity_ah": "range",
