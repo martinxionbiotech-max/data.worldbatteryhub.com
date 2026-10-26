@@ -1,0 +1,21 @@
+# World Battery Hub — Data
+
+> Battery specification data reference — BCI battery group sizes, chemistry comparison, cold cranking amps, dimensions/terminal layouts, and weight charts. Data-driven sub-site of the World Battery Hub family.
+
+## Core Pages
+
+- [Home](https://data.worldbatteryhub.com/): Entry point to the battery data reference.
+- [Battery Groups](https://data.worldbatteryhub.com/battery-groups/): BCI battery group-size specifications (individual group pages via /battery-groups/[group]/).
+- [Chemistries](https://data.worldbatteryhub.com/chemistries/): Battery chemistry overview and comparison (individual chemistry pages via /chemistries/[chemistry]/).
+- [CCA](https://data.worldbatteryhub.com/cca/): Cold cranking amps reference values.
+- [Dimensions & Terminals](https://data.worldbatteryhub.com/dimensions-terminals/): Physical dimensions and terminal layouts.
+- [Weight Chart](https://data.worldbatteryhub.com/weight-chart/): Battery weight reference data.
+
+## Main site
+
+- [World Battery Hub](https://worldbatteryhub.com/): Main knowledge hub (guides, tools, glossary, methodology).
+
+## Notes
+
+- Specification values are general reference data and may vary by manufacturer and model; confirm against manufacturer datasheets before ordering.
+- This is a sub-site in the World Battery Hub family; see the main site's llms.txt for the full family.
