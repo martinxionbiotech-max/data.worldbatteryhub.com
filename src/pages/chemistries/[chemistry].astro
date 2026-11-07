@@ -39,6 +39,16 @@ const datasetJsonLd = {
   creator: { '@id': 'https://worldbatteryhub.com/#organization' },
   publisher: { '@id': 'https://worldbatteryhub.com/#organization' },
 };
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: `What is ${chemistry.name}?`, acceptedAnswer: { '@type': 'Answer', text: `${chemistry.full_name}. Nominal voltage ${chemistry.nominal_voltage_v} V, energy density ${chemistry.energy_density_wh_kg} Wh/kg (${chemistry.energy_density_basis}), typical cycle life ${chemistry.cycle_life} cycles.` } },
+    { '@type': 'Question', name: `What is the cycle life of ${chemistry.name}?`, acceptedAnswer: { '@type': 'Answer', text: `${chemistry.cycle_life} cycles. The basis is: ${chemistry.cycle_life_basis}.` } },
+    { '@type': 'Question', name: `Is ${chemistry.name} suitable for my application?`, acceptedAnswer: { '@type': 'Answer', text: `It depends on the duty cycle. ${chemistry.name} has an energy density of ${chemistry.energy_density_wh_kg} Wh/kg and a temperature window of ${chemistry.temperature_window}. Compare that with the application's energy, power, cycle-life and temperature requirements before choosing.` } },
+  ],
+};
+
 ---
 
 <!DOCTYPE html>
@@ -65,6 +75,7 @@ const datasetJsonLd = {
     </style>
     <script type="application/ld+json" set:html={JSON.stringify(definedTermJsonLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(datasetJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   
     <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"@id\": \"https://data.worldbatteryhub.com/chemistries/\", \"url\": \"https://data.worldbatteryhub.com/chemistries/\", \"name\": \"Chemistries\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}, \"isPartOf\": {\"@id\": \"https://data.worldbatteryhub.com/\"}}"} />
     <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Battery Data\", \"item\": \"https://data.worldbatteryhub.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Chemistries\", \"item\": \"https://data.worldbatteryhub.com/chemistries/\"}]}"} />
@@ -131,7 +142,15 @@ const datasetJsonLd = {
         <p class="muted">Last verified: {chemistry.last_verified}</p>
       </div>
 
-      <h2>Related</h2>
+<h2>Frequently asked questions</h2>
+      <h3>What is {chemistry.name}?</h3>
+      <p>{chemistry.full_name}. Nominal voltage {chemistry.nominal_voltage_v} V, energy density {chemistry.energy_density_wh_kg} Wh/kg ({chemistry.energy_density_basis}), typical cycle life {chemistry.cycle_life} cycles.</p>
+      <h3>What is the cycle life of {chemistry.name}?</h3>
+      <p>{chemistry.cycle_life} cycles. The basis is: {chemistry.cycle_life_basis}.</p>
+      <h3>Is {chemistry.name} suitable for my application?</h3>
+      <p>It depends on the duty cycle. {chemistry.name} has an energy density of {chemistry.energy_density_wh_kg} Wh/kg and a temperature window of {chemistry.temperature_window}. Compare that with the application's energy, power, cycle-life and temperature requirements before choosing.</p>
+
+            <h2>Related</h2>
       <div class="related">
         <a href="/chemistries/">All chemistries</a>
         <a href="https://worldbatteryhub.com/lithium/lfp-vs-nmc-vs-lto/">LFP vs NMC vs LTO</a>
