@@ -39,7 +39,8 @@ const datasetJsonLd = {
   
     <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"@id\": \"https://data.worldbatteryhub.com/chemistries/\", \"url\": \"https://data.worldbatteryhub.com/chemistries/\", \"name\": \"Lithium Cell Chemistries\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}, \"isPartOf\": {\"@id\": \"https://data.worldbatteryhub.com/\"}}"} />
     <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Battery Data\", \"item\": \"https://data.worldbatteryhub.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Chemistries\", \"item\": \"https://data.worldbatteryhub.com/chemistries/\"}]}"} />
-  </head>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which chemistry has the longest cycle life?", "acceptedAnswer": {"@type": "Answer", "text": "LFP generally offers the longest cycle life among common lithium chemistries, followed by LTO in high-power applications and NMC/NCA in energy-focused designs. The exact count depends on depth of discharge, temperature and end-of-life criterion."}}, {"@type": "Question", "name": "Why do the same chemistry values differ between sources?", "acceptedAnswer": {"@type": "Answer", "text": "Cell design, electrode formulation, test temperature and the definition of end of life all change the result. The data site reports ranges and labels the evidence so that a single number is not mistaken for a universal specification."}}]}</script>
+</head>
   <body>
     <div class="container">
       <p class="muted"><a href="/">← Battery Data</a> · Entity: <strong>Chemistry</strong></p>
@@ -83,7 +84,18 @@ const datasetJsonLd = {
         discharge. Figures are typical ranges — treat them as relative, not absolute.
       </p>
 
-      <h2>Related references</h2>
+      <h2>How to compare chemistries</h2>
+<p>Compare chemistries on the metric that decides your application, not on a single headline number. Energy density favours NMC and NCA; cycle life and safety favour LFP; power and low-temperature behaviour favour LTO. The table above gives the reference values; the decision also depends on cost, available space and the thermal system around the cells.</p>
+<ul>
+<li><strong>Energy density</strong> — Wh/kg and Wh/L, measured at cell level, not pack level.</li>
+<li><strong>Cycle life</strong> — stated at a specific depth of discharge and temperature; without those, the number is not comparable.</li>
+<li><strong>Safety</strong> — thermal runaway onset and propagation behaviour, not a single "safe/unsafe" label.</li>
+<li><strong>Cost</strong> — per kWh at pack level, including the BMS and thermal hardware.</li>
+</ul>
+<h2>What the evidence labels mean</h2>
+<p>A value marked as cross-verified has at least two independent sources; a value marked as claimed comes from the manufacturer alone. The label describes the evidence, not the likelihood that the chemistry suits your application. Where a range is given, the spread reflects different cell designs and test conditions, not uncertainty about the chemistry itself.</p>
+
+<h2>Related references</h2>
       <ul>
         <li><a href="https://worldbatteryhub.com/lithium/lfp-vs-nmc-vs-lto/">LFP vs NMC vs LTO (main knowledge base)</a></li>
         <li><a href="https://worldbatteryhub.com/lithium/energy-density/">How energy density works</a></li>
@@ -93,7 +105,12 @@ const datasetJsonLd = {
 
       <p class="muted">Source: cross-verified from cell-manufacturer datasheets and battery engineering references. Last verified: 2026-09-18.</p>
       <p class="muted">Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>.</p>
-    </div>
+    <h2>Frequently asked questions</h2>
+<h3>Which chemistry has the longest cycle life?</h3>
+<p>LFP generally offers the longest cycle life among common lithium chemistries, followed by LTO in high-power applications and NMC/NCA in energy-focused designs. The exact count depends on depth of discharge, temperature and end-of-life criterion.</p>
+<h3>Why do the same chemistry values differ between sources?</h3>
+<p>Cell design, electrode formulation, test temperature and the definition of end of life all change the result. The data site reports ranges and labels the evidence so that a single number is not mistaken for a universal specification.</p>
+</div>
   <p class="muted">Dataset license: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — free to share and adapt with attribution.</p>
   </body>
 </html>
